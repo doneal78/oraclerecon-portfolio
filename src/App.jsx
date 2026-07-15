@@ -2,6 +2,7 @@ import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-mo
 import { useEffect, useRef, useState } from 'react'
 import { Mail, Phone, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar } from 'lucide-react'
 import './App.css'
+import CyberBackground from './components/CyberBackground'
 
 const portfolioData = {
   name: "David O'Neal",
@@ -186,6 +187,7 @@ function App() {
 
   return (
     <div className="app">
+    <CyberBackground />
       <nav className="navbar">
         <motion.div
           className="nav-content"
