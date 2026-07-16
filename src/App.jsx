@@ -264,7 +264,7 @@ function App() {
               <div className="hero-social">
                 <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Shield size={18} /></a>
                 <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Link size={18} /></a>
-                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub">Star<Code size={18} /></a>
+                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><Code size={18} /></a>
                 <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><Code size={18} /></a>
                 <a href="/Resume.pdf" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
               </div>
