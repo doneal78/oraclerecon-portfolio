@@ -528,9 +528,11 @@ function ProjectCard({ project, index }) {
 function TimelineCard({ job, index }) {
   const isCurrent = index === 0
   const entryNum = String(index + 1).padStart(2, '0')
+  const startYear = job.period.match(/\d{4}/)?.[0] || ''
 
   return (
     <div className="timeline-row">
+      {index > 0 && <span className="timeline-year">{startYear}</span>}
       <motion.div
         className={`timeline-dot ${isCurrent ? 'timeline-dot-current' : ''}`}
         initial={{ scale: 0, opacity: 0 }}
