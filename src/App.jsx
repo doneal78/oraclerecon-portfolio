@@ -1,6 +1,6 @@
 import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Star } from 'lucide-react'
+import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar } from 'lucide-react'
 import './App.css'
 import CyberBackground from './components/CyberBackground'
 
@@ -262,7 +262,7 @@ function App() {
               </h2>
               <p className="hero-location">{portfolioData.location}</p>
               <div className="hero-social">
-                <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Star size={18} /></a>
+                <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Shield size={18} /></a>
                 <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Link size={18} /></a>
                 <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub">Star<Code size={18} /></a>
                 <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><Code size={18} /></a>
