@@ -230,6 +230,7 @@ body {
   color: var(--text-secondary);
   line-height: 1.85;
   white-space: pre-line;
+  text-align: left;
 }
 
 /* Currently Building */
