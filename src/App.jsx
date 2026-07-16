@@ -1,4 +1,4 @@
-Staimport { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
+import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Star } from 'lucide-react'
 import './App.css'
