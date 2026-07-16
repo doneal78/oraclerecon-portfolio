@@ -1,6 +1,6 @@
 import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { Mail, Phone, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar } from 'lucide-react'
+import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Award, Github, Linkedin } from 'lucide-react'
 import './App.css'
 import CyberBackground from './components/CyberBackground'
 
@@ -11,7 +11,9 @@ const portfolioData = {
   email: "onealdavide@gmail.com",
   phone: "(501) 749-4031",
   linkedin: "https://linkedin.com/in/david-oneal",
-  gitlab: "https://gitlab.com/doneal78-group",
+ gitlab: "https://gitlab.com/doneal78-group",
+ github: "https://github.com/doneal78",
+ grcClub: "https://directory.grcengclub.com/engineers/doneal78/",
   stats: [
     { value: 8, suffix: "+", label: "Years in IT & Tech" },
     { value: 40, suffix: "%", label: "FP Reduction @ Bank OZK" },
@@ -244,25 +246,37 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="hero-content">
-            <motion.h1
-              className="hero-title"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              {portfolioData.name}
-            </motion.h1>
-            <h2 className="hero-subtitle">
-              {subtitle}
-              <span className="cursor">|</span>
-            </h2>
-            <p className="hero-location">{portfolioData.location}</p>
-            <div className="hero-social">
-              <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Link size={24} /></a>
-              <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><Code size={24} /></a>
-              <a href={`mailto:${portfolioData.email}`} title="Email"><Mail size={24} /></a>
+          <div className="hero-grid">
+            <div className="hero-text">
+              <motion.h1
+                className="hero-title"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+              >
+                {portfolioData.name}
+              </motion.h1>
+              <h2 className="hero-subtitle">
+                {subtitle}
+                <span className="cursor">|</span>
+              </h2>
+              <p className="hero-location">{portfolioData.location}</p>
+              <div className="hero-social">
+                <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Award size={18} /></a>
+                <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Linkedin size={18} /></a>
+                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><Github size={18} /></a>
+                <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><Code size={18} /></a>
+                <a href="/Resume.pdf" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
+              </div>
             </div>
+            <motion.div
+              className="hero-photo"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
+              <img src="/Profile.png" alt="David O'Neal" />
+            </motion.div>
           </div>
         </motion.div>
 
@@ -512,12 +526,11 @@ function ProjectCard({ project, index }) {
 }
 
 function TimelineCard({ job, index }) {
-  const isLeft = index % 2 === 0
   const isCurrent = index === 0
   const entryNum = String(index + 1).padStart(2, '0')
 
   return (
-    <div className={`timeline-row ${isLeft ? 'timeline-left' : 'timeline-right'}`}>
+    <div className="timeline-row">
       <motion.div
         className={`timeline-dot ${isCurrent ? 'timeline-dot-current' : ''}`}
         initial={{ scale: 0, opacity: 0 }}
@@ -527,10 +540,10 @@ function TimelineCard({ job, index }) {
       />
       <motion.div
         className="timeline-card"
-        initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+        initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: index * 0.15, duration: 0.55, ease: 'easeOut' }}
+        transition={{ delay: index * 0.1, duration: 0.5, ease: 'easeOut' }}
         whileHover={{ boxShadow: '0 0 30px var(--accent-glow)' }}
       >
         <div className="timeline-card-header">
