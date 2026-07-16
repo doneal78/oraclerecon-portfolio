@@ -1,6 +1,6 @@
 import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Award, Github } from 'lucide-react'
+import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Award } from 'lucide-react'
 import './App.css'
 import CyberBackground from './components/CyberBackground'
 
@@ -254,7 +254,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                {portfolioData.name}
+                {portfolioData.name}H
               </motion.h1>
               <h2 className="hero-subtitle">
                 {subtitle}
@@ -264,7 +264,7 @@ function App() {
               <div className="hero-social">
                 <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Award size={18} /></a>
                 <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Link size={18} /></a>
-                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><Github size={18} /></a>
+                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub">Award<Code size={18} /></a>
                 <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><Code size={18} /></a>
                 <a href="/Resume.pdf" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
               </div>
