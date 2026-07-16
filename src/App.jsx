@@ -254,7 +254,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                {portfolioData.name}H
+                {portfolioData.name}
               </motion.h1>
               <h2 className="hero-subtitle">
                 {subtitle}
