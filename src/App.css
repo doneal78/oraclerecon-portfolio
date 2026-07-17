@@ -757,3 +757,59 @@ body {
     to { opacity: 1; transform: translateY(0); }
   }
 }
+/* Light mode */
+[data-theme="light"] {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #e2e8f0;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-glow: rgba(2, 132, 199, 0.2);
+  --accent-green: #059669;
+  --accent-green-glow: rgba(5, 150, 105, 0.15);
+  --border: #cbd5e1;
+}
+
+[data-theme="light"] canvas {
+  opacity: 0.07;
+}
+
+[data-theme="light"] .navbar {
+  background: rgba(240, 244, 248, 0.92);
+}
+
+[data-theme="light"] .hero-title {
+  filter: drop-shadow(0 0 6px rgba(2, 132, 199, 0.2));
+}
+
+[data-theme="light"] .timeline-line {
+  box-shadow: none;
+}
+
+[data-theme="light"] .timeline-dot {
+  box-shadow: none;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(2, 132, 199, 0.06);
+}

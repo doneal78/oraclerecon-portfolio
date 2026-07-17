@@ -1,7 +1,8 @@
 import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar } from 'lucide-react'
+import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Sun, Moon } from 'lucide-react'
 import './App.css'
+import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
 import CyberBackground from './components/CyberBackground'
 
 const portfolioData = {
@@ -184,11 +185,23 @@ function AnimatedCounter({ value, suffix }) {
 
 function App() {
   const subtitle = useTypewriter(portfolioData.title, 38, 600)
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <div className="app">
+    <div className={`app ${theme}`}>
     <CyberBackground />
       <nav className="navbar">
         <motion.div
@@ -208,6 +221,10 @@ function App() {
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
           </div>
+
+          <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
 
           {/* Hamburger button */}
           <button
@@ -263,10 +280,10 @@ function App() {
               <p className="hero-location">{portfolioData.location}</p>
               <div className="hero-social">
                 <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Shield size={18} /></a>
-                <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><Link size={18} /></a>
-                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><Code size={18} /></a>
-                <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><ExternalLink size={18} /></a>
-                <a href="/Resume.pdf" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
+                <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><FaLinkedin size={18} /></a>
+                <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><FaGithub size={18} /></a>
+                <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><FaGitlab size={18} /></a>
+                <a href="/resume.pdf" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
               </div>
             </div>
             <motion.div
@@ -551,7 +568,7 @@ function TimelineCard({ job, index }) {
             <p className="experience-company">{job.company}</p>
           </div>
           <div className="experience-period">
-            <Calendar size={14} />
+            <Calendar, Sun, Moon size={14} />
             {job.period}
           </div>
         </div>
