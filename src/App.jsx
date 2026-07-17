@@ -191,12 +191,6 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme)
   }, [theme])
   const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
-  useEffect(() => {
-    localStorage.setItem('theme', theme)
-    document.documentElement.setAttribute('data-theme', theme)
-  }, [theme])
-  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
 
