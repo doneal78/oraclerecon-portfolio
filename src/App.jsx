@@ -273,7 +273,7 @@ function App() {
               </h2>
               <p className="hero-location">{portfolioData.location}</p>
               <div className="hero-social">
-                <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><Shield size={18} /></a>
+                <a href={portfolioData.grcClub} target="_blank" rel="noopener noreferrer" title="GRC Engineering Club"><img src="/grc-club.png" alt="GRC Engineering Club" style={{width:18,height:18,borderRadius:2,objectFit:'contain'}} /></a>
                 <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><FaLinkedin size={18} /></a>
                 <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><FaGithub size={18} /></a>
                 <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><FaGitlab size={18} /></a>
