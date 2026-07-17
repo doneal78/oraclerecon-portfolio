@@ -568,7 +568,7 @@ function TimelineCard({ job, index }) {
             <p className="experience-company">{job.company}</p>
           </div>
           <div className="experience-period">
-            <Calendar, Sun, Moon size={14} />
+            <Calendar size={14} />
             {job.period}
           </div>
         </div>
