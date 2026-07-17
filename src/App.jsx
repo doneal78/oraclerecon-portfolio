@@ -426,22 +426,7 @@ function App() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="section-title">Get In Touch</h3>
-          <div className="contact-card">
-            <div className="contact-item">
-              <Mail size={24} />
-              <a href={`mailto:${portfolioData.email}`}>{portfolioData.email}</a>
-            </div>
-
-            <div className="contact-item">
-              <Link size={24} />
-              <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <div className="contact-item">
-              <Code size={24} />
-              <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer">GitLab: GRC Projects</a>
-            </div>
-          </div>
+          <h3 className="section-title">Download Resume</h3>
           <div className="resume-download">
             <motion.a
               href="/resume.pdf"
