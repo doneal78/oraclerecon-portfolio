@@ -15,9 +15,10 @@ const CyberBackground = () => {
     window.addEventListener('resize', resize)
 
     const lerpRGB = (t) => {
-      const g = Math.round(180 + t * (255 - 180))
-      const b = Math.round(255 + t * (190 - 255))
-      return `0,${g},${b}`
+      const r = Math.round(56 + t * (52 - 56))
+      const g = Math.round(189 + t * (211 - 189))
+      const b = Math.round(248 + t * (153 - 248))
+      return `${r},${g},${b}`
     }
 
     const stars = Array.from({ length: 125 }, () => ({
@@ -59,7 +60,7 @@ const CyberBackground = () => {
 
     const animate = () => {
       tick++
-      cx.fillStyle = '#030810'
+      cx.fillStyle = '#0F172A'
       cx.fillRect(0, 0, cv.width, cv.height)
       nebula()
 
@@ -124,8 +125,8 @@ const CyberBackground = () => {
         const pr = n.r + Math.sin(n.pulse) * 0.85
         const rgb = lerpRGB(Math.sin(n.cp) * 0.5 + 0.5)
         for (let g = 5; g >= 1; g--) {
-          cx.beginPath(); cx.arc(n.x, n.y, pr * g * 2.6, 0, Math.PI * 2)
-          cx.fillStyle = `rgba(${rgb},${0.016 / g})`; cx.fill()
+          cx.beginPath(); cx.arc(n.x, n.y, pr * g * 2.0, 0, Math.PI * 2)
+          cx.fillStyle = `rgba(${rgb},${0.01 / g})`; cx.fill()
         }
         cx.beginPath(); cx.arc(n.x, n.y, pr * 1.9, 0, Math.PI * 2)
         cx.strokeStyle = `rgba(${rgb},0.12)`; cx.lineWidth = 0.5; cx.stroke()
@@ -135,10 +136,10 @@ const CyberBackground = () => {
 
       scanY = (scanY + 0.28) % cv.height
       for (let i = 0; i < 72; i++) {
-        cx.fillStyle = `rgba(35,215,95,${Math.sin((i / 72) * Math.PI) * 0.02})`
+        cx.fillStyle = `rgba(52,211,153,${Math.sin((i / 72) * Math.PI) * 0.008})`
         cx.fillRect(0, scanY - 36 + i, cv.width, 1)
       }
-      cx.fillStyle = 'rgba(35,215,80,0.065)'
+      cx.fillStyle = 'rgba(52,211,153,0.02)'
       cx.fillRect(0, scanY, cv.width, 1)
 
       animId = requestAnimationFrame(animate)
