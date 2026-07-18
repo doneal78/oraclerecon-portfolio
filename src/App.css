@@ -320,6 +320,7 @@ body {
   position: relative;
   color: var(--text-secondary);
   font-size: 0.9rem;
+  text-align: left;
 }
 
 .skill-list li::before {
@@ -377,6 +378,7 @@ body {
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: var(--text-primary);
+  text-align: left;
 }
 
 .project-description {
@@ -384,6 +386,7 @@ body {
   margin-bottom: 1.25rem;
   line-height: 1.7;
   font-size: 0.95rem;
+  text-align: left;
 }
 
 .project-technologies {
@@ -410,6 +413,7 @@ body {
   position: relative;
   color: var(--text-secondary);
   font-size: 0.9rem;
+  text-align: left;
 }
 
 .project-achievements li::before {
