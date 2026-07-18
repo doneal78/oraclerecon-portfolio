@@ -61,18 +61,18 @@ const drawChevron = () => {
       const cx2 = cv.width * 0.92
       const cy2 = cv.height * 0.12
       const size = 38
-      ctx.save()
-      ctx.globalAlpha = 0.022
-      ctx.strokeStyle = '#38BDF8'
-      ctx.lineWidth = 1.2
-      ctx.beginPath()
-      ctx.moveTo(cx2, cy2 - size * 0.5)
-      ctx.lineTo(cx2 + size * 0.38, cy2 + size * 0.5)
-      ctx.lineTo(cx2, cy2 + size * 0.2)
-      ctx.lineTo(cx2 - size * 0.38, cy2 + size * 0.5)
-      ctx.closePath()
-      ctx.stroke()
-      ctx.restore()
+      cx.save ()
+      cx.globalAlpha = 0.022
+      cx.strokeStyle = '#38BDF8'
+      cx.lineWidth = 1.2
+      cx.beginPath()
+      cx.moveTo(cx2, cy2 - size * 0.5)
+      cx.lineTo(cx2 + size * 0.38, cy2 + size * 0.5)
+      cx.lineTo(cx2, cy2 + size * 0.2)
+      cx.lineTo(cx2 - size * 0.38, cy2 + size * 0.5)
+      cx.closePath()
+      cx.stroke()
+      cx.restore()
     }
     const animate = () => {
       tick++
