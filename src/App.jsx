@@ -127,40 +127,10 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
         "Powered by Google Gemini 2.5 Flash with custom prompt engineering for GRC context"
       ]
     },
-    {
+      
+     {
       name: "Cybersecurity Home Lab",
-      description: "VirtualBox lab with Windows and Ubuntu workstations standing in for a small enterprise network. Working through the TCM Security PSAA curriculum for hands-on IR, log analysis, and detection engineering outside of work.",
-      technologies: ["VirtualBox", "Windows Server", "Ubuntu", "Splunk", "Log analysis", "Detection engineering"],
-      achievements: [
-        "Simulates a small enterprise network for realistic IR and detection practice",
-        "Supports TCM Security PSAA certification preparation",
-        "Ongoing hands-on lab for continuous skill development"
-      ]
-    }
-  ],
-      description: "A Python and Flask toolset built to automate the most time-consuming manual work in GRC. Includes a CLI control mapper that cross-references NIST 800-53, ISO 27001, and SOC 2 requirements in seconds, a risk register that calculates likelihood-impact scores automatically, and a compliance evidence collector that automates audit artifact gathering from APIs and file systems organized by control.",
-      technologies: ["Python", "Flask", "CLI tooling", "Git", "GitLab", "JSON/CSV pipelines", "API integration"],
-      gitlabLink: "https://gitlab.com/doneal78-group",
-      achievements: [
-        "CLI control mapper reduces NIST/ISO/SOC 2 cross-referencing from hours to seconds",
-        "Automated risk scoring ensures consistent likelihood-impact ratings across assessors",
-        "Compliance evidence collector automates audit artifact gathering by control",
-        "Actively maintained as an ongoing GRC upskilling project"
-      ]
-    },
-    {
-      name: "OracleRecon: Independent GRC & AI Security Consultancy",
-      description: "Founded OracleRecon to provide GRC and AI security advisory services to SMBs that need security guidance without a full-time security team. Also produced The Access Blueprint, a structured IAM governance framework available on Gumroad that helps security teams handle access provisioning decisions consistently.",
-      technologies: ["NIST 800-53", "NIST AI RMF", "ISO 27001", "SOC 2", "Python automation", "Policy drafting"],
-      achievements: [
-        "Delivered GRC and AI security advisory engagements for SMB clients",
-        "Published The Access Blueprint IAM governance framework on Gumroad",
-        "Developed repeatable frameworks for risk assessment, compliance workflows, and AI governance"
-      ]
-    },
-    {
-      name: "Cybersecurity Home Lab",
-      description: "A VirtualBox-based enterprise simulation lab with Windows and Ubuntu workstations used for hands-on practice in incident response, log analysis, and detection engineering. Built to complement the TCM Security PSAA curriculum.",
+     description: "VirtualBox lab with Windows and Ubuntu workstations standing in for a small enterprise network. Working through the TCM Security PSAA curriculum for hands-on IR, log analysis, and detection engineering outside of work.",
       technologies: ["VirtualBox", "Windows Server", "Ubuntu", "Splunk", "Log analysis", "Detection engineering"],
       achievements: [
         "Simulates a small enterprise network for realistic IR and detection practice",
