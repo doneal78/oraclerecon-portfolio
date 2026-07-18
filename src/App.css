@@ -262,6 +262,7 @@ body {
   position: relative;
   color: var(--text-secondary);
   font-size: 0.975rem;
+  text-align: left;
 }
 
 .now-list li::before {
@@ -583,6 +584,7 @@ body {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 .experience-bullets li::before {
@@ -623,6 +625,7 @@ body {
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.2rem;
+  text-align: left;
 }
 
 .cert-year { font-size: 0.8rem; color: var(--text-secondary); }
