@@ -544,6 +544,7 @@ function TimelineCard({ job, index }) {
         className="timeline-card"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -30 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1, duration: 0.5, ease: 'easeOut' }}
         whileHover={{ boxShadow: '0 0 30px var(--accent-glow)' }}
