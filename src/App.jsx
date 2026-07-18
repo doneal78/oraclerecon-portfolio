@@ -395,11 +395,9 @@ function App() {
             transition={{ duration: 1.4, ease: 'easeInOut' }}
             style={{ originY: 0 }}
           />
-          <AnimatePresence>
           {portfolioData.experience.map((job, index) => (
             <TimelineCard key={index} job={job} index={index} />
           ))}
-          </AnimatePresence>
         </div>
       </section>
 
@@ -539,15 +537,14 @@ function TimelineCard({ job, index }) {
         className={`timeline-dot ${isCurrent ? 'timeline-dot-current' : ''}`}
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.15 }}
         transition={{ delay: index * 0.15 + 0.3, duration: 0.4 }}
       />
       <motion.div
         className="timeline-card"
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -30 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.15 }}
         transition={{ delay: index * 0.1, duration: 0.5, ease: 'easeOut' }}
         whileHover={{ boxShadow: '0 0 30px var(--accent-glow)' }}
       >
