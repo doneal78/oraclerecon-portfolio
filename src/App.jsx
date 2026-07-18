@@ -1,4 +1,4 @@
-import { motion, useInView, useMotionValue, useSpring, animate } from 'framer-motion'
+import { motion, useInView, useMotionValue, useSpring, animate, AnimatePresence } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, Link, Code, Briefcase, Calendar, Sun, Moon } from 'lucide-react'
 import './App.css'
@@ -395,9 +395,11 @@ function App() {
             transition={{ duration: 1.4, ease: 'easeInOut' }}
             style={{ originY: 0 }}
           />
+          <AnimatePresence>
           {portfolioData.experience.map((job, index) => (
             <TimelineCard key={index} job={job} index={index} />
           ))}
+          </AnimatePresence>
         </div>
       </section>
 
