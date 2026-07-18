@@ -25,7 +25,7 @@ const portfolioData = {
     {
       title: "Project Manager",
       company: "Legato Security",
-      period: "Sep 2025 – Present",
+      period: "Sep 2025 – Jul 2026",
       bullets: [
         "Lead security service delivery for 10+ enterprise client accounts at an MSSP, coordinating across SOC analysts, engineers, and channel partners.",
         "Build and manage onboarding workflows in GuideCX with milestone tracking that gets new clients up and running faster.",
@@ -104,7 +104,40 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
   ],
   projects: [
     {
-      name: "GRC Engineering Toolkit",
+      name: "Compliance Automation Lab",
+      description: "A live GRC engineering build following the AJ Yawn GRC Engineering for AWS curriculum. Started with four Python tools covering control mapping across NIST 800-53, ISO 27001, and SOC 2, automatic risk scoring in a Flask web app, a compliance evidence collector that pulls audit artifacts from APIs, and an AI policy generator running through Ollama. Moved into infrastructure with a boto3 AWS Config compliance checker and a Terraform baseline that took a live AWS account from 40% AT RISK to 78% NEEDS IMPROVEMENT. Security Hub CSPM followed with FSBP and CIS v1.2.0. Extended with GRC Engineering Club weekly challenges: a GitHub Actions CI/CD gate that blocks non-compliant configs before merge, Cosign keyless signing with tamper verification on infrastructure artifacts, and a NIST 800-53 Rev 5 baseline deployed into a live Security Hub account.",
+      technologies: ["Python", "Terraform", "AWS Security Hub", "boto3", "GitHub Actions", "Flask", "Ollama", "NIST 800-53"],
+      gitlabLink: "https://gitlab.com/doneal78-group",
+      achievements: [
+        "Terraform baseline moved a live AWS account from 40% AT RISK to 78% NEEDS IMPROVEMENT",
+        "GitHub Actions CI/CD gate blocks non-compliant infrastructure configs before merge",
+        "Cosign keyless signing with tamper verification on infrastructure artifacts",
+        "NIST 800-53 Rev 5 baseline deployed into live AWS Security Hub alongside FSBP and CIS v1.2.0"
+      ]
+    },
+    {
+      name: "OracleRecon Shield",
+      description: "AI-powered SMB risk assessment platform built on Google Gemini 2.5 Flash. Business owners answer 25 questions across 6 security domains and receive a risk grade, prioritized vulnerabilities, and a remediation roadmap, cutting assessment time from several days to under 30 minutes. Concept to live in under 8 hours, built solo.",
+      technologies: ["Google Gemini 2.5 Flash", "React", "AI Risk Assessment", "Prompt Engineering"],
+      liveLink: "https://oracle-recon-insight.lovable.app",
+      achievements: [
+        "Cuts SMB security assessment time from several days to under 30 minutes",
+        "25-question assessment across 6 security domains with AI-generated risk grade",
+        "Concept to live production deployment in under 8 hours, built solo",
+        "Powered by Google Gemini 2.5 Flash with custom prompt engineering for GRC context"
+      ]
+    },
+    {
+      name: "Cybersecurity Home Lab",
+      description: "VirtualBox lab with Windows and Ubuntu workstations standing in for a small enterprise network. Working through the TCM Security PSAA curriculum for hands-on IR, log analysis, and detection engineering outside of work.",
+      technologies: ["VirtualBox", "Windows Server", "Ubuntu", "Splunk", "Log analysis", "Detection engineering"],
+      achievements: [
+        "Simulates a small enterprise network for realistic IR and detection practice",
+        "Supports TCM Security PSAA certification preparation",
+        "Ongoing hands-on lab for continuous skill development"
+      ]
+    }
+  ],
       description: "A Python and Flask toolset built to automate the most time-consuming manual work in GRC. Includes a CLI control mapper that cross-references NIST 800-53, ISO 27001, and SOC 2 requirements in seconds, a risk register that calculates likelihood-impact scores automatically, and a compliance evidence collector that automates audit artifact gathering from APIs and file systems organized by control.",
       technologies: ["Python", "Flask", "CLI tooling", "Git", "GitLab", "JSON/CSV pipelines", "API integration"],
       gitlabLink: "https://gitlab.com/doneal78-group",
@@ -137,8 +170,8 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
     }
   ],
   currentlyBuilding: [
-    "GRC Engineering Toolkit: Python/Flask automation suite",
-    "OracleRecon: GRC & AI security advisory for SMBs"
+    "Compliance Automation Lab: Python, Terraform, AWS Security Hub, GitHub Actions CI/CD",
+    "OracleRecon Shield: AI-powered SMB risk assessment on Google Gemini 2.5 Flash"
   ]
 }
 
@@ -339,7 +372,7 @@ function App() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
         >
           <h3 className="section-title">Skills & Expertise</h3>
@@ -522,13 +555,14 @@ function ProjectCard({ project, index }) {
 }
 
 function TimelineCard({ job, index }) {
-  const isCurrent = index === 0
+  const isCurrent = false
   const entryNum = String(index + 1).padStart(2, '0')
   const startYear = job.period.match(/\d{4}/)?.[0] || ''
+  const stardate = startYear ? `SD ${startYear}.${index + 1}` : ''
 
   return (
     <div className="timeline-row">
-      {index > 0 && <span className="timeline-year">{startYear}</span>}
+      {index > 0 && <span className="timeline-year">{stardate}</span>}
       <motion.div
         className={`timeline-dot ${isCurrent ? 'timeline-dot-current' : ''}`}
         initial={{ scale: 0, opacity: 0 }}
