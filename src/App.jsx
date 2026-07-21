@@ -91,6 +91,7 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
     other: ["AI Risk Assessment", "LLM-assisted Policy Generation", "Prompt Engineering", "Vulnerability Management", "SOC Analysis", "Incident Response", "Threat Hunting", "Detection Tuning", "Patch Automation", "SLA Compliance"]
   },
   certifications: [
+    { name: "Certified GRC Engineer, Auditor Specialty (CGE-AUD)", year: "2026" },
     { name: "GRC Foundations in Cybersecurity", year: "2024" },
     { name: "Practical Security Analyst Assessment (PSAA)", year: "In Progress" },
     { name: "Introduction to Hacking Methodology", year: "2026" },
