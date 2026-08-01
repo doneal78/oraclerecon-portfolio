@@ -7,7 +7,7 @@ import CyberBackground from './components/CyberBackground'
 
 const portfolioData = {
   name: "David O'Neal",
-  title: "GRC Engineer | AI Security & Governance | Security Operations",
+  title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",title: "GRC Engineer | Compliance Automation | Python, Terraform, AWS",
   location: "Cabot, AR | Remote",
   email: "onealdavide@gmail.com",
   phone: "(501) 749-4031",
