@@ -131,6 +131,18 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
     },
       
      {
+      name: "SOC 2 Evidence Pipeline",
+      description: "A fully automated SOC 2 evidence collection pipeline built on AWS. Pulls Security Hub findings and AWS Config compliance data using boto3, processes them through pandas, and generates a formatted Excel workbook with separate sheets for each Trust Services Criteria category. Designed to replace manual screenshot-based evidence collection with a repeatable, auditable, code-driven process.",
+      technologies: ["Python", "boto3", "AWS Security Hub", "AWS Config", "pandas", "Excel", "SOC 2"],
+      githubLink: "https://github.com/doneal78/grc-soc2-pipeline",
+      achievements: [
+        "Pulls live Security Hub findings and Config compliance data automatically via boto3",
+        "Generates formatted Excel workbook with sheets mapped to SOC 2 Trust Services Criteria",
+        "Replaces manual screenshot-based evidence collection with a repeatable code-driven process",
+        "Built without Audit Manager which is unavailable in new AWS accounts"
+      ]
+    },
+    {
       name: "GRC Engineering Pipeline",
       description: "An end-to-end, evidence-first GRC automation pipeline submitted to the GRC Engineering Club prize pool. Terraform defines compliant AWS S3 storage implementing SC-28, AC-3, CM-6, and AU-3. Rego policies test the Terraform plan before deployment with 6 of 6 tests passing. GitHub Actions gates every pull request and blocks non-compliant merges at the platform level. Cosign provides keyless signing with cryptographic chain of custody on all evidence artifacts. OSCAL maps every control claim to signed evidence, validated with trestle returning VALID on both documents.",
       technologies: ["Terraform", "Rego/OPA", "GitHub Actions", "Cosign", "OSCAL", "AWS S3", "NIST 800-53", "Python"],
