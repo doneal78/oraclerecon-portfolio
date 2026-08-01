@@ -131,13 +131,15 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
     },
       
      {
-      name: "Cybersecurity Home Lab",
-     description: "VirtualBox lab with Windows and Ubuntu workstations standing in for a small enterprise network. Working through the TCM Security PSAA curriculum for hands-on IR, log analysis, and detection engineering outside of work.",
-      technologies: ["VirtualBox", "Windows Server", "Ubuntu", "Splunk", "Log analysis", "Detection engineering"],
+      name: "GRC Engineering Pipeline",
+      description: "An end-to-end, evidence-first GRC automation pipeline submitted to the GRC Engineering Club prize pool. Terraform defines compliant AWS S3 storage implementing SC-28, AC-3, CM-6, and AU-3. Rego policies test the Terraform plan before deployment with 6 of 6 tests passing. GitHub Actions gates every pull request and blocks non-compliant merges at the platform level. Cosign provides keyless signing with cryptographic chain of custody on all evidence artifacts. OSCAL maps every control claim to signed evidence, validated with trestle returning VALID on both documents.",
+      technologies: ["Terraform", "Rego/OPA", "GitHub Actions", "Cosign", "OSCAL", "AWS S3", "NIST 800-53", "Python"],
+      githubLink: "https://github.com/doneal78/grc-engineering-pipeline",
       achievements: [
-        "Simulates a small enterprise network for realistic IR and detection practice",
-        "Supports TCM Security PSAA certification preparation",
-        "Ongoing hands-on lab for continuous skill development"
+        "6 of 6 Rego policy tests passing across SC-28, AC-3, CM-6, and AU-3 controls",
+        "Deliberate SC-28 regression blocked at platform level by branch protection with preserved evidence artifact",
+        "Tamper verification proves one appended byte breaks the cryptographic chain immediately",
+        "Two OSCAL documents validated with trestle returning VALID on both"
       ]
     }
   ],
@@ -519,6 +521,11 @@ function ProjectCard({ project, index }) {
         {project.gitlabLink && (
           <a href={project.gitlabLink} target="_blank" rel="noopener noreferrer" className="project-link">
             <Code size={16} /> GitLab
+          </a>
+        )}
+        {project.githubLink && (
+          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+            <ExternalLink size={16} /> GitHub
           </a>
         )}
         {project.labsLink && (
