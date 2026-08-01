@@ -220,7 +220,7 @@ function App() {
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Resume</a>
           </div>
 
           <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
@@ -251,7 +251,7 @@ function App() {
             <a href="#projects" onClick={closeMenu}>Projects</a>
             <a href="#experience" onClick={closeMenu}>Experience</a>
             <a href="#certifications" onClick={closeMenu}>Certifications</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a href="#contact" onClick={closeMenu}>Resume</a>
           </motion.div>
         )}
       </nav>
