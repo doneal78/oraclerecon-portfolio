@@ -108,7 +108,7 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
       name: "Compliance Automation Lab",
       description: "A live GRC engineering build following the AJ Yawn GRC Engineering for AWS curriculum. Started with four Python tools covering control mapping across NIST 800-53, ISO 27001, and SOC 2, automatic risk scoring in a Flask web app, a compliance evidence collector that pulls audit artifacts from APIs, and an AI policy generator running through Ollama. Moved into infrastructure with a boto3 AWS Config compliance checker and a Terraform baseline that took a live AWS account from 40% AT RISK to 78% NEEDS IMPROVEMENT. Security Hub CSPM followed with FSBP and CIS v1.2.0. Extended with GRC Engineering Club weekly challenges: a GitHub Actions CI/CD gate that blocks non-compliant configs before merge, Cosign keyless signing with tamper verification on infrastructure artifacts, and a NIST 800-53 Rev 5 baseline deployed into a live Security Hub account.",
       technologies: ["Python", "Terraform", "AWS Security Hub", "boto3", "GitHub Actions", "Flask", "Ollama", "NIST 800-53"],
-      gitlabLink: "https://gitlab.com/doneal78-group",
+      githubLink: "https://github.com/doneal78/grc-compliance-checker",
       labsLink: "https://labs.davidoneal.dev",
       achievements: [
         "Terraform baseline moved a live AWS account from 40% AT RISK to 78% NEEDS IMPROVEMENT",
