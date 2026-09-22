@@ -83,11 +83,11 @@ At Bank OZK I worked as a SOC Analyst investigating phishing, malware, BEC, and 
 
 Outside of my day job I founded OracleRecon, an independent GRC and AI security consultancy, where I deliver risk assessments, compliance program development, and AI governance frameworks for SMBs. I hold an M.S. in Cybersecurity from Maryville University and stay sharp through hands-on labs and continuous learning.`,
   skills: {
-    cloud: ["AWS (IAM, S3, CloudFormation)", "Microsoft Azure (Azure AD)"],
-    security: ["NIST 800-53", "NIST AI RMF", "ISO 27001", "SOC 2", "Control Mapping", "Audit Support", "SOP Development"],
+         cloud: ["AWS Security Hub", "AWS Config", "AWS CloudTrail", "AWS S3", "AWS KMS", "AWS IAM", "AWS Lambda", "EventBridge", "Microsoft Azure (Azure AD)"],
+   security: ["NIST 800-53", "ISO 27001", "SOC 2", "PCI DSS", "OPA/Rego", "Conftest", "OSCAL 1.2.1", "compliance-trestle", "Cosign/Sigstore"],
     tools: ["Tenable.io", "Nessus", "PDQ Deploy", "Splunk", "Microsoft Sentinel", "Chronicle SIEM", "CrowdStrike", "Microsoft Defender", "Proofpoint", "Cisco SEG", "Jira", "GuideCX", "Google Gemini API", "Ollama (local LLMs)"],
-    programming: ["Python", "Flask", "Bash", "Git", "GitLab", "JSON/CSV pipelines", "API integration"],
-    grc: ["NIST 800-53", "NIST AI RMF", "ISO 27001", "SOC 2"],
+    programming: ["Python", "boto3", "Bash", "Terraform", "GitHub Actions", "JSON", "YAML", "Flask", "SQLite"],
+    grc: ["NIST 800-53 Rev 5", "SOC 2 TSC", "ISO 27001", "PCI DSS", "FFIEC", "GLBA", "FedRAMP/RMF"],
     other: ["AI Risk Assessment", "LLM-assisted Policy Generation", "Prompt Engineering", "Vulnerability Management", "SOC Analysis", "Incident Response", "Threat Hunting", "Detection Tuning", "Patch Automation", "SLA Compliance"]
   },
   certifications: [
