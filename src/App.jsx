@@ -16,10 +16,10 @@ const portfolioData = {
  github: "https://github.com/doneal78",
  grcClub: "https://directory.grcengclub.com/engineers/doneal78/",
   stats: [
-    { value: 8, suffix: "+", label: "Years in IT & Tech" },
-    { value: 40, suffix: "%", label: "FP Reduction @ Bank OZK" },
-    { value: 72, suffix: "hr", label: "Critical Remediation SLA" },
-    { value: 10, suffix: "+", label: "Enterprise Clients Managed" },
+   { value: 10, suffix: "", label: "Projects Built on AWS" },
+    { value: 83, suffix: "%", label: "Compliance Score Achieved" },
+    { value: 6, suffix: "/6", label: "Policy Tests Passing" },
+    { value: 21, suffix: "", label: "NIST 800-53 Controls Mapped" },
   ],
   experience: [
     {
