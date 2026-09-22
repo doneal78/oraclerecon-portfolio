@@ -155,9 +155,9 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
       ]
     }
   ],
-  currentlyBuilding: [
-    "Compliance Automation Lab: Python, Terraform, AWS Security Hub, GitHub Actions CI/CD",
-    "OracleRecon Shield: AI-powered SMB risk assessment on Google Gemini 2.5 Flash"
+   currentlyBuilding: [
+    "CGE-P (Practitioner): Certified GRC Engineer Practitioner course — In Progress",
+    "Project 11: Audit Readiness Pipeline — Chapter 9 of the GRC Engineering curriculum"
   ]
 }
 
