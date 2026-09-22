@@ -4,6 +4,7 @@ import { Mail, ExternalLink, Download, Shield, Cpu, Lock, Database, Globe, Zap, 
 import './App.css'
 import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
 import CyberBackground from './components/CyberBackground'
+import ProofOfWork from './components/ProofOfWork'
 
 const portfolioData = {
   name: "David O'Neal",
@@ -279,6 +280,7 @@ function App() {
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#certifications">Certifications</a>
+            <a href="#proof">Proof</a>
             <a href="#contact">Resume</a>
           </div>
 
@@ -310,6 +312,7 @@ function App() {
             <a href="#projects" onClick={closeMenu}>Projects</a>
             <a href="#experience" onClick={closeMenu}>Experience</a>
             <a href="#certifications" onClick={closeMenu}>Certifications</a>
+            <a href="#proof" onClick={closeMenu}>Proof</a>
             <a href="#contact" onClick={closeMenu}>Resume</a>
           </motion.div>
         )}
@@ -436,7 +439,7 @@ function App() {
           </div>
         </motion.div>
       </section>
-
+      <ProofOfWork />
       {/* EXPERIENCE — animated timeline */}
       <section id="experience" className="section">
         <motion.div
