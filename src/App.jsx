@@ -118,19 +118,6 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
       ]
     },
     {
-      name: "OracleRecon Shield",
-      description: "AI-powered SMB risk assessment platform built on Google Gemini 2.5 Flash. Business owners answer 25 questions across 6 security domains and receive a risk grade, prioritized vulnerabilities, and a remediation roadmap, cutting assessment time from several days to under 30 minutes. Concept to live in under 8 hours, built solo.",
-      technologies: ["Google Gemini 2.5 Flash", "React", "AI Risk Assessment", "Prompt Engineering"],
-      liveLink: "https://oracle-recon-insight.lovable.app",
-      achievements: [
-        "Cuts SMB security assessment time from several days to under 30 minutes",
-        "25-question assessment across 6 security domains with AI-generated risk grade",
-        "Concept to live production deployment in under 8 hours, built solo",
-        "Powered by Google Gemini 2.5 Flash with custom prompt engineering for GRC context"
-      ]
-    },
-      
-     {
       name: "SOC 2 Evidence Pipeline",
       description: "A fully automated SOC 2 evidence collection pipeline built on AWS. Pulls Security Hub findings and AWS Config compliance data using boto3, processes them through pandas, and generates a formatted Excel workbook with separate sheets for each Trust Services Criteria category. Designed to replace manual screenshot-based evidence collection with a repeatable, auditable, code-driven process.",
       technologies: ["Python", "boto3", "AWS Security Hub", "AWS Config", "pandas", "Excel", "SOC 2"],
