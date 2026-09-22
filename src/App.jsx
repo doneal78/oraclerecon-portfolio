@@ -79,11 +79,13 @@ const portfolioData = {
       ]
     }
   ],
-  summary: `I'm an IT and cybersecurity professional with 8+ years in technology, including 4+ years in security-focused roles spanning financial services, government, aerospace, and industrial environments. I specialize in GRC engineering, AI security governance, and building repeatable security processes through automation.
+  summary: `I'm an IT and cybersecurity professional with 8+ years across IT operations, security operations, compliance, and vulnerability management in financial services, government, aerospace, and industrial environments.
+
+Over the past year I completed a ten-project GRC engineering curriculum on AWS, building a compliance automation pipeline from scratch using Terraform, Python, boto3, OPA/Rego, GitHub Actions, Cosign, and OSCAL. The work moved a live AWS account from 40% AT RISK to 83% GOOD, with every claim backed by verifiable evidence in GitHub. I hold a Certified GRC Engineer, Auditor Specialty (CGE-AUD) credential and am currently pursuing the Practitioner certification.
 
 At Bank OZK I worked as a SOC Analyst investigating phishing, malware, BEC, and DLP incidents daily, tuning detection rules that cut false positives by 40%. At Legato Security I led vulnerability and patch management for enterprise clients, cutting critical remediation timelines from several weeks to under 72 hours. At the Arkansas Department of Public Safety I maintained 95%+ patch compliance across 500+ endpoints and mapped controls directly to NIST 800-53 for state regulatory audits.
 
-Outside of my day job I founded OracleRecon, an independent GRC and AI security consultancy, where I deliver risk assessments, compliance program development, and AI governance frameworks for SMBs. I hold an M.S. in Cybersecurity from Maryville University and stay sharp through hands-on labs and continuous learning.`,
+I hold an M.S. in Cybersecurity from Maryville University and stay sharp through hands-on labs and continuous learning.`,
   skills: {
          cloud: ["AWS Security Hub", "AWS Config", "AWS CloudTrail", "AWS S3", "AWS KMS", "AWS IAM", "AWS Lambda", "EventBridge", "Microsoft Azure (Azure AD)"],
    security: ["NIST 800-53", "ISO 27001", "SOC 2", "PCI DSS", "OPA/Rego", "Conftest", "OSCAL 1.2.1", "compliance-trestle", "Cosign/Sigstore"],
