@@ -5,6 +5,7 @@ import './App.css'
 import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
 import CyberBackground from './components/CyberBackground'
 import ProofOfWork from './components/ProofOfWork'
+import ComplianceJourney from './components/ComplianceJourney'
 
 const portfolioData = {
   name: "David O'Neal",
@@ -439,6 +440,7 @@ function App() {
           </div>
         </motion.div>
       </section>
+       <ComplianceJourney />
       <ProofOfWork />
       {/* EXPERIENCE — animated timeline */}
       <section id="experience" className="section">
