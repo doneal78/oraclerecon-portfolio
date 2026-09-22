@@ -142,10 +142,10 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
         "Built without Audit Manager which is unavailable in new AWS accounts"
       ]
     },
-    {
+   {
       name: "GRC Engineering Pipeline",
       description: "An end-to-end, evidence-first GRC automation pipeline submitted to the GRC Engineering Club prize pool. Terraform defines compliant AWS S3 storage implementing SC-28, AC-3, CM-6, and AU-3. Rego policies test the Terraform plan before deployment with 6 of 6 tests passing. GitHub Actions gates every pull request and blocks non-compliant merges at the platform level. Cosign provides keyless signing with cryptographic chain of custody on all evidence artifacts. OSCAL maps every control claim to signed evidence, validated with trestle returning VALID on both documents.",
-      technologies: ["Terraform", "Rego/OPA", "GitHub Actions", "Cosign", "OSCAL", "AWS S3", "NIST 800-53", "Python"],
+      technologies: ["Terraform", "Rego/OPA", "Conftest", "GitHub Actions", "Cosign", "Sigstore", "OSCAL", "compliance-trestle", "AWS S3", "NIST 800-53"],
       githubLink: "https://github.com/doneal78/grc-engineering-pipeline",
       achievements: [
         "6 of 6 Rego policy tests passing across SC-28, AC-3, CM-6, and AU-3 controls",
@@ -153,7 +153,67 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
         "Tamper verification proves one appended byte breaks the cryptographic chain immediately",
         "Two OSCAL documents validated with trestle returning VALID on both"
       ]
-    }
+    },
+    {
+      name: "Event-Driven Compliance Engine",
+      description: "Serverless auto-remediation pipeline using AWS Lambda, EventBridge, SNS, and Terraform. Non-compliant resource configurations trigger an event that invokes a Lambda function to remediate the violation and send an SNS notification, all within seconds of detection. Demonstrates real-time compliance enforcement rather than periodic scanning.",
+      technologies: ["AWS Lambda", "EventBridge", "SNS", "Terraform", "Python", "boto3", "NIST 800-53"],
+      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      achievements: [
+        "Auto-remediation triggered and completed in 3.5 seconds from detection to resolution",
+        "Event-driven architecture eliminates manual remediation steps entirely",
+        "SNS notification chain provides auditable alert trail for every remediation action",
+        "Terraform-managed infrastructure ensures the engine itself is version-controlled and reproducible"
+      ]
+    },
+    {
+      name: "CI/CD Compliance Pipeline",
+      description: "GitHub Actions pipeline that runs Bandit SAST on every commit and pipes findings directly into AWS Security Hub. Non-compliant code is blocked from merging via branch protection rules. Compliance evidence is generated automatically on every build, eliminating manual evidence collection for code security controls.",
+      technologies: ["GitHub Actions", "Bandit", "AWS Security Hub", "Python", "SAST", "CI/CD"],
+      githubLink: "https://github.com/doneal78/grc-cicd-pipeline",
+      achievements: [
+        "Bandit SAST integrated into CI/CD gate, blocking non-compliant code before merge",
+        "Security Hub findings automatically imported on every pipeline run",
+        "Compliance evidence generated as a build artifact on every commit",
+        "Branch protection enforces the gate so developers cannot bypass the compliance check"
+      ]
+    },
+    {
+      name: "Real-Time Compliance Dashboard",
+      description: "Flask web application with SQLite backend and matplotlib visualizations that aggregates compliance findings from AWS Security Hub and Config into a live dashboard. Control status, failure trends, and remediation progress are visible in real time without leaving a browser. Built to replace spreadsheet-based compliance reporting.",
+      technologies: ["Python", "Flask", "SQLite", "matplotlib", "AWS Security Hub", "AWS Config", "boto3"],
+      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      achievements: [
+        "Live dashboard replacing manual spreadsheet-based compliance reporting",
+        "Control status and failure trends visible in real time via browser",
+        "Aggregates findings from both Security Hub and Config into a single view",
+        "SQLite backend stores historical compliance data for trend analysis"
+      ]
+    },
+    {
+      name: "Okta API Compliance Collector",
+      description: "Python tool that connects to a live Okta tenant via API and collects MFA enrollment status, inactive accounts, and access review evidence across real users. Outputs structured evidence files mapped to identity governance controls. Built against an actual Okta Integrator tenant with real test users, not mocked data.",
+      technologies: ["Python", "Okta API", "boto3", "IAM", "Identity Governance", "NIST 800-53 AC-2"],
+      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      achievements: [
+        "Pulls live MFA compliance data from a real Okta tenant via API",
+        "67% compliance score produced from actual tenant data with specific gap analysis",
+        "Evidence output mapped directly to NIST 800-53 AC-2 identity management controls",
+        "Demonstrates identity governance automation beyond AWS-only compliance tooling"
+      ]
+    },
+    {
+      name: "OSCAL System Security Plan",
+      description: "A machine-readable System Security Plan documenting 21 NIST 800-53 controls in OSCAL 1.2.1 format. Component definitions map each control to its implementation evidence and the signed artifacts that prove it. Validated with compliance-trestle returning VALID on both the component definition and profile documents. Designed for FedRAMP and federal compliance contexts where OSCAL is increasingly required.",
+      technologies: ["OSCAL 1.2.1", "compliance-trestle", "NIST 800-53", "Python", "JSON", "FedRAMP"],
+      githubLink: "https://github.com/doneal78/grc-oscal-ssp",
+      achievements: [
+        "21 NIST 800-53 controls documented in machine-readable OSCAL 1.2.1 format",
+        "trestle validate returns VALID on both component definition and profile documents",
+        "Control implementations mapped directly to Cosign-signed evidence artifacts",
+        "Positions portfolio for FedRAMP and federal compliance roles requiring OSCAL fluency"
+      ]
+    },
   ],
    currentlyBuilding: [
     "CGE-P (Practitioner): Certified GRC Engineer Practitioner course — In Progress",
