@@ -142,7 +142,7 @@ Outside of my day job I founded OracleRecon, an independent GRC and AI security 
         "Built without Audit Manager which is unavailable in new AWS accounts"
       ]
     },
-   {
+    {
       name: "GRC Engineering Pipeline",
       description: "An end-to-end, evidence-first GRC automation pipeline submitted to the GRC Engineering Club prize pool. Terraform defines compliant AWS S3 storage implementing SC-28, AC-3, CM-6, and AU-3. Rego policies test the Terraform plan before deployment with 6 of 6 tests passing. GitHub Actions gates every pull request and blocks non-compliant merges at the platform level. Cosign provides keyless signing with cryptographic chain of custody on all evidence artifacts. OSCAL maps every control claim to signed evidence, validated with trestle returning VALID on both documents.",
       technologies: ["Terraform", "Rego/OPA", "Conftest", "GitHub Actions", "Cosign", "Sigstore", "OSCAL", "compliance-trestle", "AWS S3", "NIST 800-53"],
