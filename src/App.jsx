@@ -514,13 +514,12 @@ function App() {
           <div className="resume-download">
             <motion.a
               href="/resume"
-              download
               className="download-button"
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px var(--accent-glow)' }}
               whileTap={{ scale: 0.97 }}
             >
-              <Download size={20} />
-              Download Resume
+               <ExternalLink size={20} />
+              View Resume Online
             </motion.a>
           </div>
         </motion.div>
