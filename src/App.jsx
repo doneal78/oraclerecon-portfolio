@@ -284,6 +284,7 @@ function App() {
             <a href="#experience">Experience</a>
             <a href="#certifications">Certifications</a>
             <a href="#proof">Proof</a>
+              <a href="https://labs.davidoneal.dev" target="_blank" rel="noopener noreferrer">GRC Labs</a>
             <a href="#contact">Resume</a>
           </div>
 
@@ -316,6 +317,7 @@ function App() {
             <a href="#experience" onClick={closeMenu}>Experience</a>
             <a href="#certifications" onClick={closeMenu}>Certifications</a>
             <a href="#proof" onClick={closeMenu}>Proof</a>
+              <a href="https://labs.davidoneal.dev" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>GRC Labs</a>
             <a href="#contact" onClick={closeMenu}>Resume</a>
           </motion.div>
         )}
