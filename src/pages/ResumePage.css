@@ -1,0 +1,32 @@
+/* Override global centering for resume page */
+#resume-page * {
+  text-align: left !important;
+  box-sizing: border-box;
+}
+
+#resume-page h1,
+#resume-page h2,
+#resume-page h3,
+#resume-page p,
+#resume-page li,
+#resume-page div {
+  text-align: left !important;
+}
+
+#resume-page ul {
+  text-align: left !important;
+  padding-left: 1.25rem;
+}
+
+#resume-page li {
+  text-align: left !important;
+  line-height: 1.8;
+}
+
+#resume-page .resume-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}

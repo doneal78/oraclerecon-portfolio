@@ -1,9 +1,10 @@
+import './ResumePage.css'
 import { Download, ExternalLink, Mail, Phone } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function ResumePage() {
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg-primary)', color: 'var(--text-primary)', fontFamily: 'Inter, sans-serif' }}>
+    <div id="resume-page" style={{ minHeight: '100vh', background: 'var(--bg-primary)', color: 'var(--text-primary)', fontFamily: 'Inter, sans-serif' }}>
 
       {/* Sticky header */}
       <div style={{
@@ -220,11 +221,11 @@ function Section({ title, children }) {
 function Job({ title, company, period, children }) {
   return (
     <div style={{ marginBottom: '1.5rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.25rem', marginBottom: '0.25rem' }}>
-        <div style={{ fontWeight: '700', fontSize: '0.95rem' }}>{title}</div>
-        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontFamily: 'Courier New, monospace' }}>{period}</div>
+      <div className="resume-flex" style={{ marginBottom: '0.25rem' }}>
+        <div style={{ fontWeight: '700', fontSize: '0.95rem', textAlign: 'left' }}>{title}</div>
+        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontFamily: 'Courier New, monospace', textAlign: 'right' }}>{period}</div>
       </div>
-      <div style={{ color: 'var(--accent)', fontSize: '0.85rem', fontWeight: '500', marginBottom: '0.5rem' }}>{company}</div>
+      <div style={{ color: 'var(--accent)', fontSize: '0.85rem', fontWeight: '500', marginBottom: '0.5rem', textAlign: 'left' }}>{company}</div>
       <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-secondary)', fontSize: '0.875rem', lineHeight: '1.8' }}>
         {children}
       </ul>
