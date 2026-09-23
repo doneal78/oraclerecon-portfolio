@@ -1,5 +1,5 @@
-import { Download, ExternalLink, Github, Mail, Phone, Linkedin } from 'lucide-react'
-import { FaGitlab } from 'react-icons/fa'
+import { Download, ExternalLink, Mail, Phone } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function ResumePage() {
   return (
@@ -17,16 +17,15 @@ function ResumePage() {
         <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
           <a href="/" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>← Portfolio</a>
           
-            href="/resume.pdf"
+            <a href="/resume.pdf"
             download
             style={{
               display: 'flex', alignItems: 'center', gap: '0.4rem',
               padding: '0.5rem 1rem',
               background: 'var(--accent)', color: 'white',
               borderRadius: '6px', textDecoration: 'none',
-              fontWeight: '600', fontSize: '0.85rem'
-            }}
-          >
+             fontWeight: '600', fontSize: '0.85rem'
+            }}>
             <Download size={14} /> Download PDF
           </a>
         </div>
@@ -49,10 +48,10 @@ function ResumePage() {
               <Mail size={13} /> onealdavide@gmail.com
             </a>
             <a href="https://linkedin.com/in/david-oneal" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--accent)', textDecoration: 'none' }}>
-              <Linkedin size={13} /> linkedin.com/in/david-oneal
+              <FaLinkedin size={13} /> linkedin.com/in/david-oneal
             </a>
             <a href="https://github.com/doneal78" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--accent)', textDecoration: 'none' }}>
-              <Github size={13} /> github.com/doneal78
+              <FaGithub size={13} /> github.com/doneal78
             </a>
             <a href="https://davidoneal.dev" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--accent-green)', textDecoration: 'none' }}>
               <ExternalLink size={13} /> davidoneal.dev
@@ -184,7 +183,7 @@ function ResumePage() {
         <div style={{ borderTop: '1px solid var(--border)', marginTop: '2rem', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>davidoneal.dev · github.com/doneal78</div>
           
-            href="/resume.pdf"
+               <a href="/resume.pdf"
             download
             style={{
               display: 'flex', alignItems: 'center', gap: '0.4rem',
@@ -192,8 +191,7 @@ function ResumePage() {
               background: 'var(--accent)', color: 'white',
               borderRadius: '6px', textDecoration: 'none',
               fontWeight: '600', fontSize: '0.85rem'
-            }}
-          >
+            }}>
             <Download size={14} /> Download PDF
           </a>
         </div>
