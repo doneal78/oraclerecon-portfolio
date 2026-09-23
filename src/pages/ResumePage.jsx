@@ -1,3 +1,4 @@
+import '../App.css'
 import './ResumePage.css'
 import { Download, ExternalLink, Mail, Phone } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
