@@ -349,7 +349,7 @@ function App() {
                 <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn"><FaLinkedin size={18} /></a>
                 <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" title="GitHub"><FaGithub size={18} /></a>
                 <a href={portfolioData.gitlab} target="_blank" rel="noopener noreferrer" title="GitLab"><FaGitlab size={18} /></a>
-                <a href="/resume" download title="Download Resume" className="resume-icon"><Download size={18} /></a>
+                <a href="/resume.pdf" download title="Download Resume PDF" className="resume-icon"><Download size={18} /></a>
               </div>
             </div>
             <motion.div
