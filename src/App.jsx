@@ -140,7 +140,7 @@ I hold an M.S. in Cybersecurity from Maryville University and stay sharp through
       githubLink: "https://github.com/doneal78/grc-engineering-pipeline",
       achievements: [
         "6 of 6 Rego policy tests passing across SC-28, AC-3, CM-6, and AU-3 controls",
-        "Deliberate SC-28 regression blocked at platform level by branch protection with preserved evidence artifact",
+        "Deliberate CM-6 tagging violation blocked at platform level by branch protection with preserved evidence artifact",
         "Tamper verification proves one appended byte breaks the cryptographic chain immediately",
         "Two OSCAL documents validated with trestle returning VALID on both"
       ]
@@ -173,7 +173,7 @@ I hold an M.S. in Cybersecurity from Maryville University and stay sharp through
       name: "Real-Time Compliance Dashboard",
       description: "Flask web application with SQLite backend and matplotlib visualizations that aggregates compliance findings from AWS Security Hub and Config into a live dashboard. Control status, failure trends, and remediation progress are visible in real time without leaving a browser. Built to replace spreadsheet-based compliance reporting.",
       technologies: ["Python", "Flask", "SQLite", "matplotlib", "AWS Security Hub", "AWS Config", "boto3"],
-      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      githubLink: "https://github.com/doneal78/grc-dashboard",
       achievements: [
         "Live dashboard replacing manual spreadsheet-based compliance reporting",
         "Control status and failure trends visible in real time via browser",
@@ -207,8 +207,8 @@ I hold an M.S. in Cybersecurity from Maryville University and stay sharp through
     },
   ],
    currentlyBuilding: [
-    "CGE-P (Practitioner): Certified GRC Engineer Practitioner course — In Progress",
-    "Project 11: Audit Readiness Pipeline — Chapter 9 of the GRC Engineering curriculum"
+    "CGE-P (Practitioner): Certified GRC Engineer Practitioner course, In Progress",
+    "Project 11: Audit Readiness Pipeline, Chapter 9 of the GRC Engineering curriculum"
   ]
 }
 

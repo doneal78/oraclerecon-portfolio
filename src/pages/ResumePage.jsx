@@ -15,7 +15,7 @@ function ResumePage() {
         padding: '0.875rem 2rem',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center'
       }}>
-        <div style={{ fontWeight: '700', fontSize: '0.95rem' }}>David O'Neal — Resume</div>
+        <div style={{ fontWeight: '700', fontSize: '0.95rem' }}>David O'Neal | Resume</div>
         <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
           <a href="/" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.85rem' }}>← Portfolio</a>
           
@@ -91,7 +91,7 @@ function ResumePage() {
         {/* Experience */}
         <Section title="Experience">
           <Job
-            title="Career Transition — GRC Engineering Portfolio Development"
+            title="Career Transition: GRC Engineering Portfolio Development"
             company="Remote"
             period="August 2026 – Present"
           >
@@ -101,7 +101,7 @@ function ResumePage() {
           </Job>
           <Job
             title="Project Manager"
-            company="Legato Security — Managed Security Service Provider (MSSP)"
+            company="Legato Security, Managed Security Service Provider (MSSP)"
             period="September 2025 – July 2026"
           >
             <li>Led security service delivery for 6 to 8 concurrent enterprise client accounts coordinating across SOC analysts, engineers, and channel partners</li>

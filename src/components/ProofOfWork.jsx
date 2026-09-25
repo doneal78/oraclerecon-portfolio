@@ -2,36 +2,12 @@ import { motion } from 'framer-motion'
 import { Shield } from 'lucide-react'
 
 const proofItems = [
-  {
-    tag: 'GREEN PR',
-    label: 'Compliant PR — all 6 policy tests passing, merged cleanly',
-    url: 'https://github.com/doneal78/grc-club-week3/pull/1'
-  },
-  {
-    tag: 'RED PR',
-    label: 'Blocked PR — SC-28 encryption regression caught and stopped by branch protection',
-    url: 'https://github.com/doneal78/grc-club-week3/pull/2'
-  },
-  {
-    tag: 'TAMPER TEST',
-    label: 'CHAIN INTACT vs FAIL — one appended byte breaks the cryptographic chain immediately',
-    url: 'https://github.com/doneal78/grc-club-week3/actions'
-  },
-  {
-    tag: 'OSCAL VALID',
-    label: 'trestle validate returning VALID on both component definition and profile documents',
-    url: 'https://github.com/doneal78/grc-oscal-ssp'
-  },
-  {
-    tag: 'POLICY TESTS',
-    label: '6 of 6 OPA/Rego policy tests passing across SC-28, AC-3, CM-6, and AU-3 controls',
-    url: 'https://github.com/doneal78/grc-club-week2'
-  },
-  {
-    tag: 'CASE STUDY',
-    label: 'Full end-to-end portfolio case study with proof links for every claim',
-    url: 'https://github.com/doneal78/grc-engineering-pipeline/blob/main/PORTFOLIO-CASE-STUDY.md'
-  }
+  { tag: 'GREEN PR', label: 'Compliant PR: all 6 policy tests passing, merged cleanly', url: 'https://github.com/doneal78/grc-club-week3/pull/1' },
+  { tag: 'RED PR', label: 'Blocked PR: a CM-6 violation (required ComplianceScope tag removed) caught and stopped by branch protection', url: 'https://github.com/doneal78/grc-club-week3/pull/2' },
+  { tag: 'TAMPER TEST', label: 'CHAIN INTACT vs FAIL: one appended byte breaks the signed evidence chain immediately', url: 'https://github.com/doneal78/grc-club-week3/actions' },
+  { tag: 'OSCAL VALID', label: 'trestle validate returning VALID on both component definition and profile documents', url: 'https://github.com/doneal78/grc-oscal-ssp' },
+  { tag: 'POLICY TESTS', label: '6 of 6 OPA/Rego policy tests passing across SC-28, AC-3, and CM-6', url: 'https://github.com/doneal78/grc-club-week2' },
+  { tag: 'CASE STUDY', label: 'Full end-to-end case study with a proof link for every claim', url: 'https://github.com/doneal78/grc-engineering-pipeline/blob/main/PORTFOLIO-CASE-STUDY.md' }
 ]
 
 function ProofOfWork() {
