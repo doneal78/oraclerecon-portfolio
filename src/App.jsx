@@ -147,14 +147,14 @@ I hold an M.S. in Cybersecurity from Maryville University and stay sharp through
     },
     {
       name: "Event-Driven Compliance Engine",
-      description: "Serverless auto-remediation pipeline using AWS Lambda, EventBridge, SNS, and Terraform. Non-compliant resource configurations trigger an event that invokes a Lambda function to remediate the violation and send an SNS notification, all within seconds of detection. Demonstrates real-time compliance enforcement rather than periodic scanning.",
-      technologies: ["AWS Lambda", "EventBridge", "SNS", "Terraform", "Python", "boto3", "NIST 800-53"],
-      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      description: "Auto-remediation system on AWS Lambda, EventBridge, and SNS, deployed entirely with Terraform. When AWS Config flags an S3 bucket as non-compliant for public read or write, EventBridge routes the event to a Lambda function that re-enables all four public access block settings and sends an SNS email confirming the fix.",
+      technologies: ["AWS Lambda", "EventBridge", "AWS Config", "SNS", "Terraform", "Python", "boto3"],
+      githubLink: "https://github.com/doneal78/grc-event-engine",
       achievements: [
-        "Auto-remediation triggered and completed in 3.5 seconds from detection to resolution",
-        "Event-driven architecture eliminates manual remediation steps entirely",
-        "SNS notification chain provides auditable alert trail for every remediation action",
-        "Terraform-managed infrastructure ensures the engine itself is version-controlled and reproducible"
+        "Detect-to-fix loop runs in about 3.5 seconds with no human intervention",
+        "Remediation proven against a real non-compliant bucket, verified in CloudWatch logs and get-public-access-block output",
+        "Least-privilege IAM role scoped to only the S3, CloudWatch Logs, and SNS actions the function needs",
+        "Local test runner covers the remediate, compliant-skip, and unhandled-rule paths"
       ]
     },
     {
@@ -181,16 +181,16 @@ I hold an M.S. in Cybersecurity from Maryville University and stay sharp through
         "SQLite backend stores historical compliance data for trend analysis"
       ]
     },
-    {
+      {
       name: "Okta API Compliance Collector",
-      description: "Python tool that connects to a live Okta tenant via API and collects MFA enrollment status, inactive accounts, and access review evidence across real users. Outputs structured evidence files mapped to identity governance controls. Built against an actual Okta Integrator tenant with real test users, not mocked data.",
-      technologies: ["Python", "Okta API", "boto3", "IAM", "Identity Governance", "NIST 800-53 AC-2"],
-      githubLink: "https://github.com/doneal78/grc-compliance-checker",
+      description: "Python tool that connects to a live Okta tenant through the REST API and collects SOC 2 identity evidence: the user roster, per-user MFA enrollment, group memberships, and authentication logs. Each dataset is mapped to its Trust Services Criterion and written to a structured Excel evidence workbook.",
+      technologies: ["Python", "Okta REST API", "pandas", "SOC 2", "Identity Governance"],
+      githubLink: "https://github.com/doneal78/grc-okta-collector",
       achievements: [
-        "Pulls live MFA compliance data from a real Okta tenant via API",
-        "67% compliance score produced from actual tenant data with specific gap analysis",
-        "Evidence output mapped directly to NIST 800-53 AC-2 identity management controls",
-        "Demonstrates identity governance automation beyond AWS-only compliance tooling"
+        "67% MFA compliance score from real tenant data, with the failing user documented as a CC6.6 finding",
+        "Evidence mapped to SOC 2 CC6.1, CC6.3, CC6.6, and CC7.2",
+        "Follows Okta's Link header pagination and handles free-tier rate limits gracefully",
+        "Credentials kept out of source code with python-dotenv"
       ]
     },
     {
