@@ -144,10 +144,8 @@ function ResumePage() {
             company="FIS Global"
             period="June 2017 – October 2021"
           >
-            <li>Monitored transaction systems for six enterprise financial clients using SIEM tooling, maintaining 99% uptime across 36 production servers</li>
-            <li>Served as escalation point for tier-1 incidents overnight and on weekends</li>
-            <li>Identified recurring alert patterns and proposed monitoring threshold adjustments that reduced repeat false escalations</li>
-            <li>Trained incoming analysts on monitoring tools and incident escalation procedures across a 24/7 operations rotation</li>
+           <li>Monitored transaction and API gateway traffic for six enterprise financial clients across 36 servers using Splunk and two in-house monitoring platforms, maintaining Critical 5-minute, High 10-minute, and Medium 20-minute response SLAs against 99% uptime obligations</li>
+           <li>Supported root cause investigations and maintained operational playbooks and documentation for audit compliance and SLA consistency</li>
           </Job>
         </Section>
 
