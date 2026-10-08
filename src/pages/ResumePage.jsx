@@ -101,7 +101,7 @@ function ResumePage() {
           </Job>
           <Job
             title="Project Manager"
-            company="Legato Security, Managed Security Service Provider (MSSP)"
+            company="Legato Security, Managed Security Service Provider (MSSP)" note="Rehired into this role after a company-wide reduction in force ended the Cybersecurity Consultant position below; two months between roles."
             period="September 2025 – July 2026"
           >
             <li>Led security service delivery for 6 to 8 concurrent enterprise client accounts coordinating across SOC analysts, engineers, and channel partners</li>
@@ -111,7 +111,7 @@ function ResumePage() {
           </Job>
           <Job
             title="Cybersecurity Consultant"
-            company="Legato Security"
+            company="Legato Security" note="Position ended in a company-wide reduction in force."
             period="April 2025 – July 2025"
           >
             <li>Managed vulnerability and patch remediation for 279+ endpoints across regulated aerospace and industrial client environments</li>
@@ -121,7 +121,7 @@ function ResumePage() {
           </Job>
           <Job
             title="State IT Security Specialist"
-            company="Arkansas Department of Public Safety"
+            company="Arkansas Department of Public Safety" note="Position eliminated due to state budget reallocation."
             period="October 2024 – March 2025"
           >
             <li>Maintained patch compliance above 95% across 500+ endpoints through automated deployment and remediation tracking</li>
@@ -137,7 +137,7 @@ function ResumePage() {
             <li>Investigated 30+ phishing, malware, BEC, and DLP incidents per week in a regulated financial-sector SOC</li>
             <li>Reduced false-positive alert volume by 40% through detection rule tuning across email and endpoint security platforms</li>
             <li>Wrote DLP response SOPs adopted as team standard</li>
-            <li>Coordinated cross-functional breach response with legal for a vendor incident affecting 5,000 to 8,000 customer accounts</li>
+            <li>Assisted in third-party breach investigations</li>
           </Job>
           <Job
             title="System Operations Analyst I"
@@ -219,7 +219,7 @@ function Section({ title, children }) {
   )
 }
 
-function Job({ title, company, period, children }) {
+function Job({ title, company, period, note, children }) {
   return (
     <div style={{ marginBottom: '1.5rem' }}>
       <div className="resume-flex" style={{ marginBottom: '0.25rem' }}>
@@ -228,8 +228,9 @@ function Job({ title, company, period, children }) {
       </div>
       <div style={{ color: 'var(--accent)', fontSize: '0.85rem', fontWeight: '500', marginBottom: '0.5rem', textAlign: 'left' }}>{company}</div>
       <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-secondary)', fontSize: '0.875rem', lineHeight: '1.8' }}>
-        {children}
+       {children}
       </ul>
+      {note && <p style={{ fontSize: '0.8rem', fontStyle: 'italic', color: 'var(--text-secondary)', marginTop: '0.35rem' }}>{note}</p>}
     </div>
   )
 }
