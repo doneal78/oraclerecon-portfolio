@@ -325,7 +325,7 @@ export const experience = [
     period: "April 2025 to July 2025",
     bullets: [
       "Designed and led patch and vulnerability management programs for aerospace and industrial clients across 279+ endpoints, prioritizing CVEs by risk level and business impact.",
-      "Used Tenable.io, Nessus, PDQ Deploy, and PDQ Connect to cut critical vulnerability remediation from several weeks to under 72 hours, more than 80% faster.",
+      "Used Tenable.io, Nessus, and PDQ Connect to cut critical vulnerability remediation from several weeks to under 72 hours, more than 80% faster.",
       "Built a Patching-as-a-Service delivery framework that standardized remediation across client environments and reduced manual coordination.",
       "Authored audit-ready patching SOPs, risk classifications, and remediation documentation for regulated clients.",
     ],
@@ -336,7 +336,7 @@ export const experience = [
     period: "October 2024 to March 2025",
     note: "Position eliminated due to state budget reallocation.",
     bullets: [
-      "Maintained patch compliance above 95% across 500+ endpoints through automated deployment and consistent remediation tracking.",
+      "Maintained patch compliance above 95% across 500+ endpoints with PDQ Connect, through automated deployment and consistent remediation tracking.",
       "Handled IAM for the department, including provisioning, deprovisioning, MFA resets, and access reviews in Active Directory and Azure AD.",
       "Mapped controls to NIST 800-53, collected audit evidence, and prepared compliance documentation for state regulatory audits.",
       "Built vulnerability dashboards and KPI reports that gave IT leadership a clear picture of current risk.",
@@ -358,7 +358,7 @@ export const experience = [
     company: "FIS Global",
     period: "June 2017 to October 2021",
     bullets: [
-      "Provided 24/7 enterprise systems monitoring using Splunk, responding in real time to service disruptions and supporting incident root cause analysis.",
+      "Provided 24/7 enterprise systems monitoring using Splunk, and used PDQ Deploy for patch deployment, responding in real time to service disruptions and supporting incident root cause analysis.",
       "Maintained operational playbooks and documentation to support audit compliance and SLA consistency.",
       "Coordinated with global support teams to meet uptime targets and deliver timely status updates.",
     ],
@@ -398,7 +398,7 @@ export const resumeSkillRows = [
   { label: "Compliance and Risk Management", items: "Risk register management, remediation tracking, patch compliance tracking, KPI and dashboard reporting" },
   { label: "Security Operations", items: "SIEM tuning, phishing, malware, BEC, and DLP investigation, detection engineering, incident response" },
   { label: "Identity and Access", items: "Active Directory, Azure AD, MFA enforcement, provisioning and deprovisioning, access reviews" },
-  { label: "Vulnerability Management", items: "Tenable.io, Nessus, PDQ Connect, CVSS-based prioritization" },
+  { label: "Vulnerability Management", items: "Tenable.io, Nessus, PDQ Deploy, PDQ Connect, CVSS-based prioritization" },
   { label: "Languages and Tools", items: "Python, boto3, Bash, JSON, YAML" },
 ]
 
@@ -478,7 +478,7 @@ export const resumeJobs = [
   {
     ...experience[3],
     bullets: [
-      "Maintained patch compliance above 95% across 500+ endpoints through automated deployment and consistent remediation tracking.",
+      "Maintained patch compliance above 95% across 500+ endpoints with PDQ Connect, through automated deployment and consistent remediation tracking.",
       "Handled IAM for the department, including provisioning, deprovisioning, MFA resets, and access reviews in Active Directory and Azure AD.",
       "Built vulnerability dashboards and KPI reports that gave IT leadership a clear picture of current risk.",
     ],
@@ -489,7 +489,7 @@ export const resumeJobs = [
     company: "FIS Global",
     period: "June 2017 to October 2021",
     bullets: [
-      "Provided 24/7 enterprise systems monitoring using Splunk, responding in real time to service disruptions and supporting incident root cause analysis.",
+      "Provided 24/7 enterprise systems monitoring using Splunk, and used PDQ Deploy for patch deployment, responding in real time to service disruptions and supporting incident root cause analysis.",
       "Maintained operational playbooks and documentation to support audit compliance and SLA consistency.",
       "Coordinated with global support teams.",
     ],

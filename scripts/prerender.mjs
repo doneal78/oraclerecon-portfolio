@@ -127,8 +127,9 @@ assertIncludes(labs, [
   '40% AT RISK',
   '78% NEEDS IMPROVEMENT',
   '83% GOOD',
-  'PDQ Deploy',
-  'PDQ Connect',
+  'used PDQ Deploy for patch deployment',
+  'with PDQ Connect',
+  'Nessus, and PDQ Connect',
   'biomedical equipment',
 ], 'labs')
 
@@ -140,6 +141,9 @@ assertIncludes(resume, [
   'ISO 27001 Lead Auditor',
   'a bank that followed SOC 2',
   'Arkansas Children',
+  'used PDQ Deploy for patch deployment',
+  'with PDQ Connect',
+  'Nessus, and PDQ Connect',
 ], 'resume')
 
 if (!fs.existsSync(path.join(dist, 'Profile.png'))) {
