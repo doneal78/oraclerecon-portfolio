@@ -5,12 +5,9 @@ export const profile = {
   subline:
     "GRC Analyst and GRC Engineer | Compliance Automation | Remote, Arkansas. CGE-AUD, ISO 27001 Lead Auditor (in progress).",
   email: "onealdavide@gmail.com",
-  phone: "(501) 749-4031",
-  phoneHref: "tel:5017494031",
   location: "Cabot, Arkansas",
   linkedin: "https://linkedin.com/in/david-oneal",
   github: "https://github.com/doneal78",
-  gitlab: "https://gitlab.com/doneal78-group",
   grcClub: "https://directory.grcengclub.com/engineers/doneal78/",
   labs: "https://labs.davidoneal.dev",
   demo: "https://grc-assurance.davidoneal.dev/",
