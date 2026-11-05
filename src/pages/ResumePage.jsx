@@ -28,7 +28,6 @@ export default function ResumePage() {
           <a className="btn btn-primary" href={profile.resumePdf} download>Download PDF</a>
         </header>
         <ul className="resume-meta">
-          <li><a href={profile.phoneHref}>{profile.phone}</a></li>
           <li><a href={`mailto:${profile.email}`}>{profile.email}</a></li>
           <li><a href={profile.linkedin}>linkedin.com/in/david-oneal</a></li>
           <li><a href={profile.github}>github.com/doneal78</a></li>

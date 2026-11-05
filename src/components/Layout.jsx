@@ -31,17 +31,12 @@ export default function Layout({ children }) {
         <p className="contact-mail">
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
         </p>
-        <p>
-          <a href={profile.phoneHref}>{profile.phone}</a>
-          <span className="dot"> · </span>
-          {profile.location}
-        </p>
+        <p>{profile.location}</p>
         <ul className="contact-links">
           <li><a href="/resume">View resume</a></li>
           <li><a href={profile.resumePdf} download>Download resume PDF</a></li>
           <li><a href={profile.linkedin}>LinkedIn</a></li>
           <li><a href={profile.github}>GitHub</a></li>
-          <li><a href={profile.gitlab}>GitLab</a></li>
           <li><a href={profile.labs}>OracleRecon labs</a></li>
           <li>
             <a href={profile.grcClub}>
