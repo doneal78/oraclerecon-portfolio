@@ -3,7 +3,7 @@ export const profile = {
   headline: "Building Governance & Controls that hold up in an audit",
   badge: "Open to remote GRC roles and 1099 healthcare GRC consulting",
   subline:
-    "GRC Analyst and GRC Engineer | Compliance Automation | Remote, Arkansas. CGE-AUD, ISO 27001 Lead Auditor (in progress).",
+    "GRC Analyst and GRC Engineer | Compliance Automation | Remote, Arkansas. CGE-AUD. ISO/IEC 27001:2022 Lead Auditor Certificate of Competency.",
   email: "onealdavide@gmail.com",
   location: "Cabot, Arkansas",
   linkedin: "https://linkedin.com/in/david-oneal",
@@ -61,10 +61,10 @@ export const aboutShort =
 
 export const aboutLong = [
   "I have 8+ years in IT and security, across IT operations, security operations, compliance, and vulnerability management in financial services, government, aerospace, and industrial environments. That includes a SOC analyst seat at Bank OZK, a bank that followed SOC 2, a state IT security role at the Arkansas Department of Public Safety, and project and consulting work at Legato Security, an MSSP. Before security, I spent 11 years at Arkansas Children's Hospital, including biomedical equipment work.",
-  "In my own AWS lab account I finished a ten-project compliance automation curriculum. The builds use Terraform, Python, boto3, OPA/Rego, GitHub Actions, Cosign, and OSCAL. I hold the Certified GRC Engineer, Auditor Specialty (CGE-AUD). The Practitioner course (CGE-P) is in progress, and so is ISO 27001 Lead Auditor.",
+  "In my own AWS lab account I finished a ten-project compliance automation curriculum. The builds use Terraform, Python, boto3, OPA/Rego, GitHub Actions, Cosign, and OSCAL. I hold the Certified GRC Engineer, Auditor Specialty (CGE-AUD). I also hold an ISO/IEC 27001:2022 Lead Auditor Certificate of Competency from Mastermind Assurance, earned through training and a skills-based exam. The Practitioner course (CGE-P) is in progress.",
   "The lab account measured 40% AT RISK before any controls were deployed. After the Terraform baseline it measured 78% NEEDS IMPROVEMENT. After the ten projects it measured 83% GOOD. Those are three stages of the same account. At the 78% stage the remaining gap was one intentionally misconfigured test bucket and a physical MFA device still pending setup on the lab IAM user. I documented that gap.",
-  "At Bank OZK I investigated phishing, malware, business email compromise, and DLP incidents, and tuned detection rules that cut phishing false positives by 40%. At Legato I led vulnerability and patch management for enterprise clients and cut critical remediation from several weeks to under 72 hours. At the Arkansas Department of Public Safety I kept patch compliance above 95% across 500+ endpoints and mapped controls to NIST 800-53 for state regulatory audits.",
-  "I have an M.S. in Cybersecurity from Maryville University and a B.S. in Information Technology from the University of Arkansas Grantham. The public build log for the lab work is on OracleRecon labs.",
+  "At Bank OZK I investigated phishing, malware, business email compromise, and DLP incidents, and tuned detection rules that cut phishing false positives by 40%. At Legato I led vulnerability and patch management for enterprise clients and cut critical remediation from several weeks to under 72 hours. At the Arkansas Department of Public Safety I kept patch compliance above 95% across 500+ endpoints and used Microsoft Sentinel and CrowdStrike.",
+  "I have an M.S. in Cybersecurity from Maryville University and a B.S. in Information Technology, Cum Laude, from the University of Arkansas Grantham. The public build log for the lab work is on ControlRecon labs.",
 ]
 
 export const posture = {
@@ -175,7 +175,7 @@ export const projects = [
     ],
     links: [
       { label: "GitHub", href: "https://github.com/doneal78/grc-compliance-checker" },
-      { label: "OracleRecon labs", href: "https://labs.davidoneal.dev" },
+      { label: "ControlRecon labs", href: "https://labs.davidoneal.dev" },
     ],
   },
   {
@@ -301,7 +301,7 @@ export const experience = [
     bullets: [
       "Independent GRC engineering work: completed a ten-project compliance automation curriculum in my own AWS lab account and earned CGE-AUD.",
       "Shipped an end-to-end compliance automation pipeline (Terraform, OPA/Rego, GitHub Actions, Cosign, OSCAL) mapped to NIST 800-53 controls SC-28, AC-3, CM-6, and AU-3, with 6 of 6 policy tests passing and a merged pull request plus a blocked pull request in the history.",
-      "Project 11, an audit readiness pipeline from chapter 9 of the curriculum, is underway. The Certified GRC Engineer Practitioner course (CGE-P) is in progress. ISO 27001 Lead Auditor is in progress.",
+      "Project 11, an audit readiness pipeline from chapter 9 of the curriculum, is underway. The Certified GRC Engineer Practitioner course (CGE-P) is in progress. Earned the ISO/IEC 27001:2022 Lead Auditor Certificate of Competency through training and a skills-based exam (Mastermind Assurance, November 2026).",
     ],
   },
   {
@@ -313,7 +313,7 @@ export const experience = [
       "Led security service delivery for 10+ enterprise client accounts at an MSSP, coordinating across SOC analysts, engineers, and channel partners.",
       "Built and managed onboarding workflows in GuideCX with milestone tracking that got new clients up and running faster.",
       "Wrote Quarterly Business Reviews (QBRs) and delivery updates that translate technical security work into plain language for client leadership.",
-      "Designed the connector setup workflow for Mave, a documented, repeatable process for engineers configuring client integrations.",
+      "Designed the connector setup workflow so engineers had a documented, repeatable process for configuring client integrations.",
     ],
   },
   {
@@ -335,7 +335,6 @@ export const experience = [
     bullets: [
       "Maintained patch compliance above 95% across 500+ endpoints with PDQ Connect, through automated deployment and consistent remediation tracking.",
       "Handled IAM for the department, including provisioning, deprovisioning, MFA resets, and access reviews in Active Directory and Azure AD.",
-      "Mapped controls to NIST 800-53, collected audit evidence, and prepared compliance documentation for state regulatory audits.",
       "Built vulnerability dashboards and KPI reports that gave IT leadership a clear picture of current risk.",
     ],
   },
@@ -345,7 +344,7 @@ export const experience = [
     period: "October 2021 to June 2024",
     bullets: [
       "Investigated and resolved 30+ phishing, malware, BEC, and DLP incidents per week in a financial-sector SOC, completing phishing investigations in under 20 minutes while maintaining SLAs and documenting findings for audit.",
-      "Reduced phishing false-positive alerts by 40% through detection rule tuning across Proofpoint, Microsoft Defender, and Cisco SEG.",
+      "Reduced phishing false-positive alerts by 40% through detection rule tuning on Proofpoint and Cisco SEG, and used Microsoft Defender for investigation and alert triage.",
       "Wrote DLP response SOPs that standardized how the team handled incidents and kept everything traceable.",
       "Worked with the security awareness team on phishing simulations and reporting habits. Phishing incidents dropped 40% over the same period.",
     ],
@@ -394,7 +393,7 @@ export const resumeSkillRows = [
   { label: "Infrastructure as Code", items: "Terraform, GitHub Actions, AWS (S3, CloudTrail, KMS, IAM)" },
   { label: "Compliance and Risk Management", items: "Risk register management, remediation tracking, patch compliance tracking, KPI and dashboard reporting" },
   { label: "Security Operations", items: "SIEM tuning, phishing, malware, BEC, and DLP investigation, detection engineering, incident response" },
-  { label: "Identity and Access", items: "Active Directory, Azure AD, MFA enforcement, provisioning and deprovisioning, access reviews" },
+  { label: "Identity and Access", items: "Active Directory, Azure AD, provisioning and deprovisioning, MFA resets, and access reviews" },
   { label: "Vulnerability Management", items: "Tenable.io, Nessus, PDQ Deploy, PDQ Connect, CVSS-based prioritization" },
   { label: "Languages and Tools", items: "Python, boto3, Bash, JSON, YAML" },
 ]
@@ -402,40 +401,53 @@ export const resumeSkillRows = [
 export const certifications = [
   {
     name: "Certified GRC Engineer, Auditor Specialty (CGE-AUD)",
-    year: "2026",
+    year: "Issued July 2026, expires July 2027",
     issuer: "GRC Engineering Club",
+    credentialId: "cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf",
     url: "https://cert.grcengclub.com/verify/cgeaud-3f4e4e28-c2e9-4162-9b6b-48e06b47caaf",
   },
-  { name: "ISO 27001 Lead Auditor", year: "In progress" },
-  { name: "GRC Jumpstart: GRC Foundations in Cybersecurity", year: "2024", issuer: "SimplyCyber" },
+  {
+    name: "ISO/IEC 27001:2022 Lead Auditor",
+    year: "Issued November 2026, expires November 8, 2029",
+    issuer: "Mastermind Assurance",
+    credentialId: "zheuvrftfu",
+    detail: "Certificate of Competency earned through training and a skills-based exam.",
+    url: "https://www.credly.com/badges/65b58dff-8353-4eaa-b75f-98f19e344e36",
+  },
+  { name: "GRC Jumpstart: GRC Foundations in Cybersecurity", year: "May 2025", issuer: "SimplyCyber" },
   { name: "Practical Security Analyst Assessment (PSAA)", year: "In progress" },
-  { name: "Introduction to Hacking Methodology", year: "2026" },
+  { name: "Introduction to Hacking Methodology", year: "January 2026", issuer: "Hack Smarter Labs" },
   { name: "Level 1 Cyber Threat Hunting Training", year: "2024" },
-  { name: "SOAR Analyst (Google Cloud Siemplify)", year: "2024" },
-  { name: "XM Cyber Exposure Management", year: "2024" },
-  { name: "VMDR (Qualys): Vulnerability Management Detection and Response", year: "2024", issuer: "Qualys" },
+  { name: "SOAR Analyst (Siemplify, now Google Cloud)", year: "August 2024" },
+  { name: "XM Cyber Exposure Management Certification", year: "April 2024" },
   { name: "Insider Threat Detection (Teramind)", year: "2024" },
-  { name: "Chronicle SIEM Fundamentals", year: "2024" },
-  { name: "M.S. in Cybersecurity, Maryville University", year: "2021" },
+  { name: "Chronicle SIEM Fundamentals", year: "August 2023" },
 ]
 
 export const education = [
   { credential: "Master of Science (MS), Cybersecurity", school: "Maryville University" },
-  { credential: "Bachelor of Science (BS), Information Technology", school: "University of Arkansas Grantham" },
+  { credential: "Bachelor of Science (BS), Information Technology, Cum Laude, University of Arkansas Grantham" },
 ]
 
 export const currentlyBuilding = [
   "CGE-P (Practitioner): Certified GRC Engineer Practitioner course, In Progress",
   "Project 11: Audit Readiness Pipeline, Chapter 9 of the GRC Engineering curriculum",
-  "ISO 27001 Lead Auditor (in progress)",
 ]
 
 export const resumeSummary = [
-  "Certified GRC Engineer, Auditor Specialty (CGE-AUD), with 8+ years in IT and security. That includes a SOC analyst role at Bank OZK, a bank that followed SOC 2, a state IT security role at the Arkansas Department of Public Safety, and MSSP work at Legato Security. Before security, I spent 11 years at Arkansas Children's Hospital, including biomedical equipment work. ISO 27001 Lead Auditor is in progress.",
+  "Certified GRC Engineer, Auditor Specialty (CGE-AUD), with 8+ years in IT and security. That includes a SOC analyst role at Bank OZK, a bank that followed SOC 2, a state IT security role at the Arkansas Department of Public Safety, and MSSP work at Legato Security. Before security, I spent 11 years at Arkansas Children's Hospital, including biomedical equipment work. I hold an ISO/IEC 27001:2022 Lead Auditor Certificate of Competency, earned through training and a skills-based exam.",
   "In my own AWS lab account I completed a ten-project compliance automation curriculum. The work includes a Terraform baseline, OPA/Rego policy tests, a GitHub Actions gate, Cosign-signed evidence, a SOC 2 evidence workbook built from Security Hub and Config, and an OSCAL system security plan for 21 NIST 800-53 controls. The lab account measured 40% AT RISK before controls, 78% NEEDS IMPROVEMENT after the Terraform baseline, and 83% GOOD after the ten projects.",
 ]
 
 export const resumeProjects = [
+  {
+    name: "GRC Assurance Engine",
+    url: "https://grc-assurance.davidoneal.dev/",
+    linkLabel: "Live demo",
+    tools: "Python, Flask",
+    proof: "The live demo uses synthetic data only. It is an illustrative prototype. The results are not approvals, certifications, or a substitute for a formal risk process.",
+    text: "Vendor and AI tool risk reviews with a tamper-evident decision trail. A person records the decision, and the event log keeps a SHA-256 hash chain so a later change to that record is visible.",
+  },
   {
     name: "GRC Engineering Pipeline",
     url: "https://github.com/doneal78/grc-engineering-pipeline",
@@ -460,7 +472,7 @@ export const resumeJobs = [
       "Led security service delivery for 10+ enterprise client accounts, coordinating across SOC analysts, engineers, and channel partners to keep projects on track.",
       "Built and managed onboarding workflows in GuideCX with milestone tracking that got new clients up and running faster.",
       "Wrote Quarterly Business Reviews (QBRs) and delivery updates translating technical security work into plain language for client leadership.",
-      "Designed the connector setup workflow for Mave so engineers had a documented, repeatable process for configuring client integrations.",
+      "Designed the connector setup workflow so engineers had a documented, repeatable process for configuring client integrations.",
     ],
   },
   {

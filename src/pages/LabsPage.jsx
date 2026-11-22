@@ -30,7 +30,7 @@ export default function LabsPage() {
 
         <aside className="callout">
           <p>
-            The public build log is <a href={profile.labs}>OracleRecon labs</a> at labs.davidoneal.dev. AWS resources in these projects run in my own lab account. That account is personal portfolio work.
+            The public build log is <a href={profile.labs}>ControlRecon labs</a> at labs.davidoneal.dev. AWS resources in these projects run in my own lab account. That account is personal portfolio work.
           </p>
         </aside>
 
@@ -166,6 +166,8 @@ export default function LabsPage() {
                 <span>
                   <strong>{cert.name}</strong>
                   {cert.issuer ? <span className="issuer"> {cert.issuer}</span> : null}
+                  {cert.detail ? <span className="cert-detail">{cert.detail}</span> : null}
+                  {cert.credentialId ? <span className="cert-detail">{`Credential ID ${cert.credentialId}`}</span> : null}
                 </span>
                 <span className="year">
                   {cert.year}
@@ -181,7 +183,7 @@ export default function LabsPage() {
           {education.map((item) => (
             <p key={item.credential} className="edu">
               <strong>{item.credential}</strong>
-              <span>{item.school}</span>
+              {item.school ? <span>{item.school}</span> : null}
             </p>
           ))}
         </section>

@@ -37,7 +37,7 @@ export default function Layout({ children }) {
           <li><a href={profile.resumePdf} download>Download resume PDF</a></li>
           <li><a href={profile.linkedin}>LinkedIn</a></li>
           <li><a href={profile.github}>GitHub</a></li>
-          <li><a href={profile.labs}>OracleRecon labs</a></li>
+          <li><a href={profile.labs}>ControlRecon labs</a></li>
           <li>
             <a href={profile.grcClub}>
               <img src="/grc-club.png" alt="" width="16" height="16" />
