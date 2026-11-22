@@ -416,6 +416,7 @@ export const certifications = [
   },
   { name: "GRC Jumpstart: GRC Foundations in Cybersecurity", year: "May 2025", issuer: "SimplyCyber" },
   { name: "Practical Security Analyst Assessment (PSAA)", year: "In progress" },
+  { name: "ISO/IEC 42001:2023 Lead Auditor", year: "In progress", issuer: "Mastermind Assurance" },
   { name: "Introduction to Hacking Methodology", year: "January 2026", issuer: "Hack Smarter Labs" },
   { name: "Level 1 Cyber Threat Hunting Training", year: "2024" },
   { name: "SOAR Analyst (Siemplify, now Google Cloud)", year: "August 2024" },
@@ -431,6 +432,7 @@ export const education = [
 
 export const currentlyBuilding = [
   "CGE-P (Practitioner): Certified GRC Engineer Practitioner course, In Progress",
+  "ISO/IEC 42001:2023 Lead Auditor, Mastermind Assurance, in progress",
   "Project 11: Audit Readiness Pipeline, Chapter 9 of the GRC Engineering curriculum",
 ]
 

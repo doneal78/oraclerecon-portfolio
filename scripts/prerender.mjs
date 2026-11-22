@@ -158,6 +158,8 @@ assertIncludes(labs, [
   'Designed the connector setup workflow so engineers had a documented, repeatable process for configuring client integrations.',
   'investigation and alert triage',
   'above 95% across 500+ endpoints',
+  'ISO/IEC 42001:2023 Lead Auditor',
+  'ISO/IEC 42001:2023 Lead Auditor, Mastermind Assurance, in progress',
 ], 'labs')
 
 assertIncludes(resume, [
