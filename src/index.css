@@ -443,6 +443,7 @@ h3 { margin: 0 0 0.45rem; font-size: 1.12rem; line-height: 1.3; }
   border-bottom: 1px solid var(--card-border);
 }
 .issuer, .year { color: var(--muted); }
+.cert-detail { display: block; color: var(--muted); font-size: 0.92rem; }
 .edu { display: flex; flex-direction: column; margin: 0 0 0.8rem; }
 .edu span { color: var(--muted); }
 
@@ -593,7 +594,11 @@ h3 { margin: 0 0 0.45rem; font-size: 1.12rem; line-height: 1.3; }
     margin: 0 0 0.2rem;
     border-bottom: 0.4pt solid #cfd8d4;
     padding-bottom: 0.08rem;
+    break-after: avoid;
+    page-break-after: avoid;
   }
+  .note { break-before: avoid; page-break-before: avoid; }
+  .cert-list li { break-inside: avoid; page-break-inside: avoid; }
   .resume p { margin: 0.12rem 0; color: #1a1a1a; }
   .resume-top { padding-bottom: 0.25rem; border-image: none; border-bottom: 1.5pt solid #0b6e56; }
   .resume-project {
@@ -612,7 +617,8 @@ h3 { margin: 0 0 0.45rem; font-size: 1.12rem; line-height: 1.3; }
   .clean li { margin: 0; color: #1a1a1a; }
   .note { margin: 0.08rem 0 0; font-size: 8pt; color: #444; }
   .skill-row { margin: 0 0 0.12rem; gap: 0.15rem 0.6rem; }
-  .skill-row span, .edu span, .issuer, .year { color: #333; }
+  .skill-row span, .edu span, .issuer, .year, .cert-detail { color: #333; }
+  .cert-detail { font-size: 8pt; }
   .cert-list li { padding: 0.08rem 0; border-bottom: none; }
   .edu { margin: 0 0 0.15rem; }
   .fine { display: none; }

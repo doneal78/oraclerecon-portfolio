@@ -9,12 +9,15 @@ import {
   resumeSummary,
 } from '../data/site.js'
 
-const resumeCerts = [
-  certifications.find((cert) => cert.name.startsWith('Certified GRC Engineer')),
-  certifications.find((cert) => cert.name === 'ISO 27001 Lead Auditor'),
-  certifications.find((cert) => cert.name.startsWith('GRC Jumpstart')),
-  certifications.find((cert) => cert.name.startsWith('VMDR')),
+const resumeCertNames = [
+  'Certified GRC Engineer, Auditor Specialty (CGE-AUD)',
+  'ISO/IEC 27001:2022 Lead Auditor',
+  'GRC Jumpstart: GRC Foundations in Cybersecurity',
+  'Introduction to Hacking Methodology',
+  'XM Cyber Exposure Management Certification',
 ]
+
+const resumeCerts = resumeCertNames.map((name) => certifications.find((cert) => cert.name === name))
 
 export default function ResumePage() {
   return (
@@ -23,7 +26,7 @@ export default function ResumePage() {
         <header className="resume-top">
           <div>
             <h1>{profile.name}</h1>
-            <p className="creds">MS, Cybersecurity · Certified GRC Engineer, Auditor Specialty (CGE-AUD) · ISO 27001 Lead Auditor (in progress)</p>
+            <p className="creds">MS, Cybersecurity · Certified GRC Engineer, Auditor Specialty (CGE-AUD) · ISO/IEC 27001:2022 Lead Auditor (Certificate of Competency)</p>
           </div>
           <a className="btn btn-primary" href={profile.resumePdf} download>Download PDF</a>
         </header>
@@ -47,7 +50,7 @@ export default function ResumePage() {
           {resumeProjects.map((project) => (
             <div key={project.name} className="resume-project">
               <h3>
-                {project.name} <a href={project.url}>GitHub</a>
+                {project.name} <a href={project.url}>{project.linkLabel || 'GitHub'}</a>
               </h3>
               <p>{project.text}</p>
               <p><strong>Tools: </strong>{project.tools}</p>
@@ -92,7 +95,7 @@ export default function ResumePage() {
           {education.map((item) => (
             <p key={item.credential} className="edu">
               <strong>{item.credential}</strong>
-              <span>{item.school}</span>
+              {item.school ? <span>{item.school}</span> : null}
             </p>
           ))}
         </section>
@@ -105,6 +108,8 @@ export default function ResumePage() {
                 <span>
                   <strong>{cert.name}</strong>
                   {cert.issuer ? <span className="issuer"> {cert.issuer}</span> : null}
+                  {cert.detail ? <span className="cert-detail">{cert.detail}</span> : null}
+                  {cert.credentialId ? <span className="cert-detail">{`Credential ID ${cert.credentialId}`}</span> : null}
                 </span>
                 <span className="year">
                   {cert.year}
