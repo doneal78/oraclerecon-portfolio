@@ -430,6 +430,7 @@ h3 { margin: 0 0 0.45rem; font-size: 1.12rem; line-height: 1.3; }
 }
 .job h3 { margin: 0; }
 .company { margin: 0.15rem 0 0; color: var(--teal); }
+.place { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.9rem; }
 .period { margin: 0; color: var(--muted); font-size: 0.92rem; }
 .note { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.92rem; }
 
@@ -612,6 +613,7 @@ h3 { margin: 0 0 0.45rem; font-size: 1.12rem; line-height: 1.3; }
   .job { padding: 0.28rem 0; border-top: none; }
   .job h3 { font-size: 10pt; }
   .company { color: #0b6e56; font-size: 8.6pt; }
+  .place { color: #444; font-size: 8pt; margin: 0; }
   .period { color: #444; font-size: 8pt; }
   .clean { margin: 0.1rem 0 0; }
   .clean li { margin: 0; color: #1a1a1a; }

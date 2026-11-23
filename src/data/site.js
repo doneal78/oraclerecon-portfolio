@@ -307,35 +307,44 @@ export const experience = [
   {
     title: "Project Manager",
     company: "Legato Security (Managed Security Service Provider)",
+    place: "United States, Remote",
     period: "September 2025 to July 2026",
     note: "Rehired into this role after a company-wide reduction in force ended the Cybersecurity Consultant position below. Two months between roles.",
     bullets: [
-      "Led security service delivery for 10+ enterprise client accounts at an MSSP, coordinating across SOC analysts, engineers, and channel partners.",
-      "Built and managed onboarding workflows in GuideCX with milestone tracking that got new clients up and running faster.",
-      "Wrote Quarterly Business Reviews (QBRs) and delivery updates that translate technical security work into plain language for client leadership.",
-      "Designed the connector setup workflow so engineers had a documented, repeatable process for configuring client integrations.",
+      "Managed security service delivery for 10+ enterprise client accounts, working with SOC analysts, engineers, and channel partners.",
+      "Built client onboarding workflows in GuideCX with milestone tracking.",
+      "Wrote Quarterly Business Reviews (QBRs), status updates, delivery summaries, and client-facing setup documentation.",
+      "Tracked project risks across client engagements.",
+      "Explained onboarding steps in plain language to non-technical clients across Eastern, Central, Mountain, and Pacific time.",
     ],
   },
   {
     title: "Cybersecurity Consultant",
     company: "Legato Security",
+    place: "United States, Remote",
     period: "April 2025 to July 2025",
     bullets: [
-      "Designed and led patch and vulnerability management programs for aerospace and industrial clients across 279+ endpoints, prioritizing CVEs by risk level and business impact.",
-      "Used Tenable.io, Nessus, and PDQ Connect to cut critical vulnerability remediation from several weeks to under 72 hours, more than 80% faster.",
-      "Built a Patching-as-a-Service delivery framework that standardized remediation across client environments and reduced manual coordination.",
-      "Authored audit-ready patching SOPs, risk classifications, and remediation documentation for regulated clients.",
+      "Designed and ran risk-based patch and vulnerability programs for aerospace and industrial clients across 279+ endpoints.",
+      "Prioritized CVEs by CVSS, risk level, and business impact, working findings in Tenable.io and Nessus.",
+      "Cut critical remediation from several weeks to under 72 hours, more than 80% faster.",
+      "Wrote risk classifications, patching SOPs, and remediation documentation that clients used for governance and audits.",
+      "Escalated high-risk and overdue items to client management.",
+      "Built a Patching-as-a-Service framework and deployed patches with PDQ Connect.",
     ],
   },
   {
     title: "State IT Security Specialist",
     company: "Arkansas Department of Public Safety",
+    place: "Little Rock, Arkansas, On-site",
     period: "October 2024 to March 2025",
     note: "Position eliminated due to state budget reallocation.",
     bullets: [
-      "Maintained patch compliance above 95% across 500+ endpoints with PDQ Connect, through automated deployment and consistent remediation tracking.",
-      "Handled IAM for the department, including provisioning, deprovisioning, MFA resets, and access reviews in Active Directory and Azure AD.",
-      "Built vulnerability dashboards and KPI reports that gave IT leadership a clear picture of current risk.",
+      "Kept patch compliance above 95% across 500+ endpoints using PDQ Deploy, Patch Manager Plus, and WSUS.",
+      "Prioritized patching using vendor advisories, CISA alerts, the CISA KEV list, and Microsoft Patch Tuesday reports, and handled emergency vendor patch response.",
+      "Reviewed and investigated security alerts in Microsoft Sentinel and CrowdStrike.",
+      "Set up and reviewed user access for new employees and Troopers after training.",
+      "Handled provisioning, deprovisioning, and MFA resets in Active Directory and Microsoft Entra ID.",
+      "Tracked patching progress in an Excel workbook and reported status to my manager.",
     ],
   },
   {
@@ -364,7 +373,7 @@ export const experience = [
 export const skillGroups = [
   {
     title: "Cloud Platforms",
-    items: ["AWS Security Hub", "AWS Config", "AWS CloudTrail", "AWS S3", "AWS KMS", "AWS IAM", "AWS Lambda", "EventBridge", "Microsoft Azure (Azure AD)"],
+    items: ["AWS Security Hub", "AWS Config", "AWS CloudTrail", "AWS S3", "AWS KMS", "AWS IAM", "AWS Lambda", "EventBridge", "Microsoft Azure (Microsoft Entra ID)"],
   },
   {
     title: "Security and Compliance",
@@ -391,9 +400,9 @@ export const skillGroups = [
 export const resumeSkillRows = [
   { label: "Compliance Automation and Policy-as-Code", items: "OPA/Rego, Conftest, Sigstore/Cosign, OSCAL 1.2.1, compliance-trestle, NIST 800-53, SOC 2" },
   { label: "Infrastructure as Code", items: "Terraform, GitHub Actions, AWS (S3, CloudTrail, KMS, IAM)" },
-  { label: "Compliance and Risk Management", items: "Risk register management, remediation tracking, patch compliance tracking, KPI and dashboard reporting" },
+  { label: "Compliance and Risk Management", items: "Risk register management, remediation tracking, patch compliance tracking, dashboard reporting" },
   { label: "Security Operations", items: "SIEM tuning, phishing, malware, BEC, and DLP investigation, detection engineering, incident response" },
-  { label: "Identity and Access", items: "Active Directory, Azure AD, provisioning and deprovisioning, MFA resets, and access reviews" },
+  { label: "Identity and Access", items: "Active Directory, Microsoft Entra ID, provisioning and deprovisioning, MFA resets, and access reviews" },
   { label: "Vulnerability Management", items: "Tenable.io, Nessus, PDQ Deploy, PDQ Connect, CVSS-based prioritization" },
   { label: "Languages and Tools", items: "Python, boto3, Bash, JSON, YAML" },
 ]
@@ -468,32 +477,9 @@ export const resumeProjects = [
 
 export const resumeJobs = [
   experience[0],
-  {
-    ...experience[1],
-    bullets: [
-      "Led security service delivery for 10+ enterprise client accounts, coordinating across SOC analysts, engineers, and channel partners to keep projects on track.",
-      "Built and managed onboarding workflows in GuideCX with milestone tracking that got new clients up and running faster.",
-      "Wrote Quarterly Business Reviews (QBRs) and delivery updates translating technical security work into plain language for client leadership.",
-      "Designed the connector setup workflow so engineers had a documented, repeatable process for configuring client integrations.",
-    ],
-  },
-  {
-    ...experience[2],
-    bullets: [
-      "Designed and led patch and vulnerability management programs for aerospace and industrial clients across 279+ endpoints, prioritizing CVEs by risk level and business impact.",
-      "Used Tenable.io, Nessus, and PDQ Connect to cut critical vulnerability remediation from several weeks to under 72 hours, more than 80% faster.",
-      "Built a Patching-as-a-Service delivery framework that standardized remediation across client environments and reduced manual coordination effort.",
-      "Authored patching SOPs, risk classifications, and remediation documentation to strengthen governance and audit readiness.",
-    ],
-  },
-  {
-    ...experience[3],
-    bullets: [
-      "Maintained patch compliance above 95% across 500+ endpoints with PDQ Connect, through automated deployment and consistent remediation tracking.",
-      "Handled IAM for the department, including provisioning, deprovisioning, MFA resets, and access reviews in Active Directory and Azure AD.",
-      "Built vulnerability dashboards and KPI reports that gave IT leadership a clear picture of current risk.",
-    ],
-  },
+  experience[1],
+  experience[2],
+  experience[3],
   experience[4],
   {
     title: "System Operations Analyst I",
