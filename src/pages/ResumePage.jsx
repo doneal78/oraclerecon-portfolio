@@ -67,6 +67,7 @@ export default function ResumePage() {
                 <div>
                   <h3>{job.title}</h3>
                   <p className="company">{job.company}</p>
+                  {job.place ? <p className="place">{job.place}</p> : null}
                 </div>
                 <p className="period">{job.period}</p>
               </header>
